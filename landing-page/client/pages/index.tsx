@@ -7,7 +7,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-      <Image src="/assets/paintbucket.png" alt="Paint Bucket" width={50} height={50} />
+      <Image src="/assets/style-palet.png" alt="Paint Bucket" width={50} height={50} />
     </div>
   )
 }

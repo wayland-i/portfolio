@@ -4,8 +4,6 @@ import Footer from './Footer';
 
 const Layout = ({children}) => {
 
-    // const { children } = props;
-
   return (
     <div>
         <Navigation />
