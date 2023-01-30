@@ -2,9 +2,9 @@ import React from 'react'
 import Navigation from './Navigation';
 import Footer from './Footer';
 
-const Layout = ( props: any ) => {
+const Layout = ({children}) => {
 
-    const { children } = props;
+    // const { children } = props;
 
   return (
     <div>
