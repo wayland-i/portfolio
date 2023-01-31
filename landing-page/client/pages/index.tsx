@@ -8,12 +8,12 @@ const Home: NextPage = () => {
     <div className='landing-page'>
       <div>
         <Image src="/assets/style-palet.png" alt="Paint Bucket" width={35} height={35} />
-        <p>Visuals</p>
+        <p>Coming Soon</p>
       </div>
       <div>
         <Image src="/assets/projects.png" alt="Projects" width={35} height={35} />
         <p>
-        My Projects
+        DEMO
         </p>
       </div>
       <div>
@@ -58,12 +58,12 @@ const Home: NextPage = () => {
         About Me
         </p>
       </div>
-      <div>
+      {/* <div>
         <Image src="/assets/folder.png" alt="About" width={35} height={35} />
         <p>
           Folder
         </p>
-      </div>
+      </div> */}
     </div>
   )
 }
