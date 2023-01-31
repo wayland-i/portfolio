@@ -5,7 +5,7 @@ import Footer from './Footer';
 const Layout = ({children}) => {
 
   return (
-    <div>
+    <div style={{'backgroundColor': '#008080', 'height': '100vh'}}>
         <Navigation />
         {children}
         <Footer />

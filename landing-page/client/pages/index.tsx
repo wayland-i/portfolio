@@ -6,8 +6,15 @@ import styles from '../styles/Home.module.css'
 const Home: NextPage = () => {
   return (
     <div>
-      <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-      <Image src="/assets/style-palet.png" alt="Paint Bucket" width={50} height={50} />
+      <Image src="/assets/style-palet.png" alt="Paint Bucket" width={35} height={35} />
+      <Image src="/assets/projects.png" alt="Projects" width={35} height={35} />
+      <Image src="/assets/pricing.png" alt="Paint Bucket" width={35} height={35} />
+      <Image src="/assets/fast-websites.png" alt="Paint Bucket" width={35} height={35} />
+      <Image src="/assets/editor.png" alt="Paint Bucket" width={35} height={35} />
+      <Image src="/assets/contact-us.png" alt="Paint Bucket" width={35} height={35} />
+      <Image src="/assets/cms.png" alt="Paint Bucket" width={35} height={35} />
+      <Image src="/assets/blog.png" alt="Paint Bucket" width={35} height={35} />
+      <Image src="/assets/about.png" alt="Paint Bucket" width={35} height={35} />
     </div>
   )
 }
