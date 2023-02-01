@@ -1,10 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import "98.css";
 
 const Home: NextPage = () => {
   return (
+    <div className='home-page'>
     <div className='landing-page'>
       <div>
         <Image src="/assets/style-palet.png" alt="Paint Bucket" width={35} height={35} />
@@ -64,6 +65,27 @@ const Home: NextPage = () => {
           Folder
         </p>
       </div>
+
+    </div>
+
+    <div style={{ width: 300, height: 100, margin: 10}} className="window">
+      <div className="title-bar">
+        <div className="title-bar-text">Social Links</div>
+        <div className="title-bar-controls">
+          <button aria-label="Minimize" />
+          <button aria-label="Maximize" />
+          <button aria-label="Close" />
+        </div>
+      </div>
+
+      <div className="window-body">
+        <div>LinkedIn</div>
+        <div>GitHub</div>
+        <div>Resume</div>
+        <div>Blog</div>
+      </div>
+    </div>
+
     </div>
   )
 }
