@@ -45,6 +45,7 @@ body {
 
 .start-button {
   background-color: #c3c3c3;
+  font-size: .85rem;
   height: min-content;
   display: flex;
   align-items: center;
@@ -91,4 +92,36 @@ p {
   font-family: 'MyFont', sans-serif;
   
   
+}
+
+.window {
+  width: 20%;
+  height: 100%;
+  margin: 1%;
+}
+
+.window-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+
+  height: 70%;
+  gap: 15%;
+}
+
+.window-body > * {
+
+  display: flex;
+  align-items: center;
+}
+
+.about {
+  margin: 2%;
+  font-family: 'MyFont', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70vh;
 }
