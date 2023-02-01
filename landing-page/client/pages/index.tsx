@@ -83,16 +83,20 @@ const Home: NextPage = () => {
 
         <div className="window-body">
           <div>
-            <button className='window-button'>
-              LinkedIn
-              <Image src="/assets/network_internet_pcs_installer-4.png" alt="Projects" width={25} height={25} />
-            </button>
+            <Link href={'https://www.linkedin.com/in/ian-iversen/'} target="_blank">
+              <button className='window-button'>
+                LinkedIn
+                <Image src="/assets/network_internet_pcs_installer-4.png" alt="Projects" width={25} height={25} />
+              </button>
+            </Link>
           </div>
           <div>
-            <button className='window-button'>
-              GitHub
-              <Image src="/assets/expand_hierarchial_array-1.png" alt="Projects" width={25} height={25} />
-            </button>
+            <Link href={'https://github.com/wayland-i'} target="_blank">
+              <button className='window-button'>
+                GitHub
+                <Image src="/assets/expand_hierarchial_array-1.png" alt="Projects" width={25} height={25} />
+              </button>
+            </Link>
           </div>
           <div>
             <button className='window-button'>
@@ -101,12 +105,17 @@ const Home: NextPage = () => {
             </button>
           </div>
           <div>
-            <button className='window-button'>
-              Blog
-              <Image src="/assets/desktop_w95-0.png" alt="Projects" width={25} height={25} />
-            </button>
+            <Link href={'https://dev.to/waylandi'} target="_blank">
+              <button className='window-button'>
+                Blog
+                <Image src="/assets/desktop_w95-0.png" alt="Projects" width={25} height={25} />
+              </button>
+            </Link>
+            <div>
+            </div>
           </div>
         </div>
+              <h6>Welcome to my website!</h6>
       </div>
 
     </div>

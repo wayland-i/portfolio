@@ -136,3 +136,15 @@ p {
   justify-content: space-around;
   
 }
+
+.technologies {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+}
+
+.technologies > p {
+  margin-left: 10%;
+
+}
