@@ -45,10 +45,12 @@ const Home: NextPage = () => {
         </p>
       </div>
       <div>
-        <Image src="/assets/contact-us.png" alt="Contact-Us" width={35} height={35} />
-        <p>
-          Coming Soon
-        </p>
+      <Link href={'https://lambent-blancmange-d17a27.netlify.app/'} target="_blank" className='landing-link'>
+          <Image src="/assets/worldwide.png" alt="Contact-Us" width={35} height={35} />
+          <p>
+            Worldwide Cuisine Quest
+          </p>
+      </Link>
       </div>
       <div>
         <Image src="/assets/cms.png" alt="CMS" width={35} height={35} />
@@ -87,7 +89,7 @@ const Home: NextPage = () => {
 
       <div className="window">
         <div className="title-bar">
-          <div className="title-bar-text">Social Links</div>
+          <div className="title-bar-text">Important Links</div>
           <div className="title-bar-controls">
             <button aria-label="Minimize" />
             <button aria-label="Maximize" />
@@ -131,7 +133,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-              <h6>Welcome to my website!</h6>
+              {/* <h6>Welcome to my website!</h6> */}
       </div>
 
     </div>
