@@ -95,7 +95,7 @@ p {
 }
 
 .window {
-  width: 20%;
+  width: 30%;
   height: 100%;
   margin: 1%;
 }
@@ -108,7 +108,7 @@ p {
   padding-top: 10%;
 
   height: 70%;
-  gap: 15%;
+  gap: 10%;
 }
 
 .window-body > * {
@@ -124,4 +124,15 @@ p {
   flex-direction: column;
   justify-content: space-between;
   height: 70vh;
+}
+
+.window-button {
+  padding: 8%;
+  width: 100px;
+  height: min-content;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  justify-content: space-around;
+  
 }

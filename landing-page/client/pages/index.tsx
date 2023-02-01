@@ -82,17 +82,29 @@ const Home: NextPage = () => {
         </div>
 
         <div className="window-body">
-          <div>LinkedIn
-            <Image src="/assets/network_internet_pcs_installer-4.png" alt="Projects" width={25} height={25} />
+          <div>
+            <button className='window-button'>
+              LinkedIn
+              <Image src="/assets/network_internet_pcs_installer-4.png" alt="Projects" width={25} height={25} />
+            </button>
           </div>
-          <div>GitHub
-            <Image src="/assets/expand_hierarchial_array-1.png" alt="Projects" width={25} height={25} />
+          <div>
+            <button className='window-button'>
+              GitHub
+              <Image src="/assets/expand_hierarchial_array-1.png" alt="Projects" width={25} height={25} />
+            </button>
           </div>
-          <div>Resume
-            <Image src="/assets/document-0.png" alt="Projects" width={25} height={25} />
+          <div>
+            <button className='window-button'>
+              Resume
+              <Image src="/assets/document-0.png" alt="Projects" width={25} height={25} />
+            </button>
           </div>
-          <div>Blog
-          <Image src="/assets/desktop_w95-0.png" alt="Projects" width={25} height={25} />
+          <div>
+            <button className='window-button'>
+              Blog
+              <Image src="/assets/desktop_w95-0.png" alt="Projects" width={25} height={25} />
+            </button>
           </div>
         </div>
       </div>
