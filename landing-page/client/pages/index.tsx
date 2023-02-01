@@ -19,16 +19,20 @@ const Home: NextPage = () => {
         </p>
       </div>
       <div>
-        <Image src="/assets/pricing.png" alt="Pricing" width={35} height={35} />
-        <p>
-        My Performance
-        </p>
+        <Link href={'/performance'} className='landing-link'>
+          <Image src="/assets/pricing.png" alt="Pricing" width={35} height={35} />
+          <p>
+          My Performance
+          </p>
+        </Link>
       </div>
       <div>
-        <Image src="/assets/fast-websites.png" alt="fast-websites" width={35} height={35} />
-        <p>
-          Contact Me
-        </p>
+        <Link href={'/contact'} className='landing-link'>
+          <Image src="/assets/fast-websites.png" alt="fast-websites" width={35} height={35} />
+          <p>
+            Contact Me
+          </p>
+        </Link>
       </div>
       <div>
         <Image src="/assets/editor.png" alt="Editor" width={35} height={35} />
@@ -55,7 +59,7 @@ const Home: NextPage = () => {
         </p>
       </div> */}
       <div>
-        <Link href={'/about'}>
+        <Link href={'/about'} className='landing-link'>
           <Image src="/assets/about.png" alt="About" width={35} height={35} />
           <p>
           About Me
@@ -65,7 +69,13 @@ const Home: NextPage = () => {
       <div>
         <Image src="/assets/folder.png" alt="folder" width={35} height={35} />
         <p>
-          Folder
+          {`<- My Projects`}
+        </p>
+      </div>
+      <div>
+        <Image src="/assets/folder.png" alt="folder" width={35} height={35} />
+        <p>
+          {`<- My Projects`}
         </p>
       </div>
 
@@ -99,11 +109,13 @@ const Home: NextPage = () => {
             </Link>
           </div>
           <div>
-            <button className='window-button'>
-              Resume
-              <Image src="/assets/document-0.png" alt="Projects" width={25} height={25} />
-            </button>
-          </div>
+            <Link href="/public/resume.pdf" as="/resume.pdf" passHref target="_blank">  
+              <button className='window-button'>
+                Resume
+                <Image src="/assets/document-0.png" alt="Projects" width={25} height={25} />
+              </button>
+            </Link>
+            </div>
           <div>
             <Link href={'https://dev.to/waylandi'} target="_blank">
               <button className='window-button'>

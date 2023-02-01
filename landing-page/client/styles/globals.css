@@ -101,6 +101,12 @@ body {
   /* text-align: center; */
 }
 
+.landing-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 p {
   font-size: .9rem;
   color: #fdffff;
