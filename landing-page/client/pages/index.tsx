@@ -19,14 +19,16 @@ const Home: NextPage = () => {
       <div>
         <Image src="/assets/projects.png" alt="Projects" width={35} height={35} />
         <p>
-        DEMO
+          Coming Soon
+        {/* DEMO */}
         </p>
       </div>
       <div>
         <Link href={'/performance'} className='landing-link'>
           <Image src="/assets/pricing.png" alt="Pricing" width={35} height={35} />
           <p>
-          My Performance
+            Coming Soon
+          {/* My Performance */}
           </p>
         </Link>
       </div>
