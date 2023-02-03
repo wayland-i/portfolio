@@ -17,7 +17,7 @@ const about = () => {
         </div>
         <div>
             <Link href={'/'}>
-                <Image src="/assets/address_book_home.png" alt="Pricing" width={35} height={35} />
+                <Image src="/assets/address_book_home.png" alt="home" width={35} height={35} />
                 Return Home
             </Link>
         </div>

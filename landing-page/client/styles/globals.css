@@ -90,6 +90,9 @@ body {
 
 }
 
+/* ON REDESIGN: mess with order of items in grid with 'order' attribute */
+
+
 .landing-page > * {
   /* width: min-content; */
   /* text-align: center; */

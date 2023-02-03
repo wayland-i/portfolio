@@ -41,13 +41,15 @@ const Home: NextPage = () => {
         </Link>
       </div>
       <div>
-        <Image src="/assets/editor.png" alt="Editor" width={35} height={35} />
-        <p>
-          Coming Soon
-        </p>
+        <Link href={'https://www.loom.com/share/e33548b98d9f4244be1080cc218f91c5'} target="_blank" className='landing-link' id='wcq'>
+          <Image src="/assets/mic-input.png" alt="Editor" width={40} height={40} />
+          <p>
+            DEMO
+          </p>
+        </Link>
       </div>
       <div>
-      <Link href={'https://lambent-blancmange-d17a27.netlify.app/'} target="_blank" className='landing-link'>
+      <Link href={'https://lambent-blancmange-d17a27.netlify.app/'} target="_blank" className='landing-link' id='wcq'>
           <Image src="/assets/worldwide.png" alt="Contact-Us" width={35} height={35} />
           <p>
             Worldwide Cuisine Quest
