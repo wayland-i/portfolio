@@ -167,16 +167,22 @@ p {
 }
 
 .technologies {
-  display: flex;
-  align-items: center;
+  display: inline;
+  
+  /* align-items: center; */
+
   /* justify-content: center; */
   /* justify-content: space-between; */
 }
 
-.technologies > p {
+.tech-list {
+  /* text-align: center; */
+}
+
+/* .technologies > p {
   margin-left: 10%;
 
-}
+} */
 
 .email {
   display: flex;

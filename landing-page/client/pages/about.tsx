@@ -18,7 +18,7 @@ const about = () => {
         </div>
         <div className='technologies'>
             <h4>Technologies</h4>
-            <p>React.js, Ruby on Rails, Next.js, Typescript, PostgreSQL, Tailwind, JavaScript, Ruby, CSS</p>
+            <p className='tech-list'>React.js, Ruby on Rails, Next.js, Typescript, PostgreSQL, Tailwind, JavaScript, Ruby, CSS</p>
         </div>
         <div>
             <Link href={'/'}>
