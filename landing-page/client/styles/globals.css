@@ -114,35 +114,38 @@ p {
   font-size: .9rem;
   color: #fdffff;
   text-align: center;
-  /* margin: 0; */
   font-family: 'MyFont', sans-serif;
   
   
 }
 
 .window {
-  width: 35%;
-  height: 100%;
+  position: absolute;
+  min-width: 25%;
+  height: 50%;
+  /* min-height: ; */
   margin: 1%;
+  right: 0px;
 }
 
 .window-body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  min-height: fit-content;
+  height: 90%;
   align-items: center;
-  /* padding-top: 5%; */
-  padding-bottom: 30%;
-  padding: 10%;
-
-  height: 70%;
-  gap: 10%;
 }
 
-.window-body > * {
 
+.window-button {
+  padding: 12%;
+  width: 100px;
+  height: min-content;
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  
 }
 
 .about {
@@ -152,17 +155,6 @@ p {
   flex-direction: column;
   justify-content: space-between;
   height: 70vh;
-}
-
-.window-button {
-  padding: 8%;
-  width: 100px;
-  height: min-content;
-  display: flex;
-  align-items: center;
-  /* justify-content: center; */
-  justify-content: space-around;
-  
 }
 
 .technologies {
