@@ -123,7 +123,7 @@ p {
   position: absolute;
   min-width: 25%;
   height: 50%;
-  /* min-height: ; */
+  /* min-height:max-content; */
   margin: 1%;
   right: 0px;
 }
@@ -135,6 +135,15 @@ p {
   min-height: fit-content;
   height: 90%;
   align-items: center;
+}
+
+@media (max-height: 500px) {
+  .window-body {
+    flex-direction: row;
+  }
+  .window {
+    width: 35%;
+  }
 }
 
 
