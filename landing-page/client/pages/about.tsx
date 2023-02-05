@@ -2,10 +2,15 @@ import React from 'react'
 import "98.css";
 import Image from 'next/image';
 import Link from 'next/link';
+import Head from 'next/head';
 
 const about = () => {
   return (
     <div className='about'>
+        <Head>
+          <title>{`Ian Iversen's Portfolio`}</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        </Head>
         <div>
             <h1>Ian Iversen</h1>
             <h2>Full Stack Web Developer</h2>
