@@ -19,4 +19,5 @@ https://webflow.com/design/ians-awesome-site-e8ba42
 
 Ideas
 https://brutalistthemes.com/downloads/w95/
+https://betawiki.net/images/thumb/3/3b/1400Desktop.png/800px-1400Desktop.png
 
