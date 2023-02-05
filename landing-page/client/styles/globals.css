@@ -127,6 +127,7 @@ p {
 }
 
 .window-body {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -139,11 +140,10 @@ p {
   gap: 10%;
 }
 
-.window-body > * {
-
+/* .window-body > * {
   display: flex;
   align-items: center;
-}
+} */
 
 .about {
   margin: 2%;
@@ -160,7 +160,6 @@ p {
   height: min-content;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   justify-content: space-around;
   
 }
