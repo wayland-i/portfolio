@@ -26,11 +26,11 @@ const Home: NextPage = () => {
           </p>
         </div>
         <div>
-          {/* <Link href={'/performance'} className='landing-link'> */}
+          {/* <Link href={'/prices'} className='landing-link'> */}
             <Image src="/assets/pricing.png" alt="Pricing" width={35} height={35} />
             <p>
               Coming Soon
-            {/* My Performance */}
+            {/* The Prices */}
             </p>
           {/* </Link> */}
         </div>
@@ -44,7 +44,7 @@ const Home: NextPage = () => {
         </div>
         <div>
           <Link href={'https://www.loom.com/share/e33548b98d9f4244be1080cc218f91c5'} target="_blank" className='landing-link' id='wcq'>
-            <Image src="/assets/mic-input.png" alt="Mic with Fader" width={40} height={40} />
+            <Image src="/assets/mic-input.png" alt="Mic with Fader" width={35} height={38} />
             <p>
               DEMO
             </p>
@@ -59,10 +59,13 @@ const Home: NextPage = () => {
         </Link>
         </div>
         <div>
-          <Image src="/assets/cms.png" alt="CMS" width={35} height={35} />
-          <p>
-            Coming Soon
-          </p>
+          {/* <Link href={'/snake'} className='landing-link'> */}
+            <Image src="/assets/snake.png" alt="AC plug" width={35} height={35} />
+            <p>
+              Coming Soon
+              {/* Snake Game */}
+            </p>
+          {/* </Link> */}
         </div>
         <div>
           <Link href={'/about'} className='landing-link'>
