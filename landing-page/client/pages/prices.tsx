@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MyPerformance = () => {
+const Prices = () => {
   return (
     <div>
         <h1>Prices</h1>
@@ -8,4 +8,4 @@ const MyPerformance = () => {
   )
 }
 
-export default MyPerformance;
+export default Prices;
