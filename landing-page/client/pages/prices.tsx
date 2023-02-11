@@ -27,6 +27,7 @@ const Prices = () => {
     })
     .then(res => res.json())
     .then(data => {
+      //how to access everything from slug=name api
       console.log(data)
       console.log(data.data)
       console.log(data.data[1].name)
@@ -34,11 +35,7 @@ const Prices = () => {
       console.log(data.data[1].quote.USD.price)
       console.log(data.data[1].quote.USD.percent_change_1h)
       setApiData(data)
-      // console.log(data.data["1"].name)
-      // console.log(data.data.status)
     })
-    // .then(res => res.json())
-    // .then(data => console.log('working'))
 
   }, [])
 
