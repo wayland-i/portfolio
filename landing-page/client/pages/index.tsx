@@ -26,13 +26,13 @@ const Home: NextPage = () => {
           </p>
         </div>
         <div>
-          {/* <Link href={'/prices'} className='landing-link'> */}
+          <Link href={'/prices'} className='landing-link'>
             <Image src="/assets/pricing.png" alt="Pricing" width={35} height={35} />
             <p>
               Coming Soon
             {/* The Prices */}
             </p>
-          {/* </Link> */}
+          </Link>
         </div>
         <div>
           <Link href={'/contact'} className='landing-link'>
