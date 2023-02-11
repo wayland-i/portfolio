@@ -59,13 +59,13 @@ const Home: NextPage = () => {
         </Link>
         </div>
         <div>
-          {/* <Link href={'/snake'} className='landing-link'> */}
+          <Link href={'/snake'} className='landing-link'>
             <Image src="/assets/snake.png" alt="AC plug" width={35} height={35} />
             <p>
-              Coming Soon
-              {/* Snake Game */}
+              {/* Coming Soon */}
+              Snake Game
             </p>
-          {/* </Link> */}
+          </Link>
         </div>
         <div>
           <Link href={'/about'} className='landing-link'>
