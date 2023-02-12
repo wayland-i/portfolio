@@ -5,6 +5,10 @@ export function snake() {
     //2. width needs to be adjusted (og was 10)
     //3. for loop in createBoard needs to be updated (og was 100)
     //4. .grid div is the squares... essentially size of the snake an apples
+    //SOLUTION:
+    //1. .grid in css from 200px h/w to 400px h/w
+    //2. width in from 10 to 20
+    //3. for loop in createBoard from 100 to 400
         
     let grid = document.querySelector(".grid");
     let popup = document.querySelector(".popup");
@@ -14,7 +18,7 @@ export function snake() {
     let bottom = document.querySelector(".bottom");
     let right = document.querySelector(".right");
     let up = document.querySelector(".top");
-    let width = 10;
+    let width = 20;
     let currentIndex = 0;
     let appleIndex = 0;
     let currentSnake = [2, 1, 0];
@@ -31,7 +35,7 @@ export function snake() {
     
     function createBoard() {
         popup.style.display = "none";
-        for (let i = 0; i < 100; i++) {
+        for (let i = 0; i < 400; i++) {
             let div = document.createElement("div");
             grid.appendChild(div);
         }
@@ -101,8 +105,8 @@ export function snake() {
             score++ 
             scoreDisplay.textContent = score 
             clearInterval(interval) 
-            intervalTime = intervalTime *speed 
-            interval = setInterval(moveOutcome,intervalTime) 
+            intervalTime = intervalTime * speed 
+            interval = setInterval(moveOutcome, intervalTime) 
         }
     } 
     
