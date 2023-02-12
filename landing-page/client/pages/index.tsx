@@ -4,8 +4,29 @@ import Image from 'next/image'
 import "98.css";
 import Link from 'next/link';
 import Window from '../comps/window';
+import { useEffect } from 'react';
 
 const Home: NextPage = () => {
+
+  // const printArrow = (e) => {
+  //   console.log(e.code)
+  // }
+
+  // useEffect(() => {
+  //   function handleKeyDown(event) {
+  //     if (event.keyCode === 37 || event.keyCode === 38 || event.keyCode === 39 || event.keyCode === 40) {
+  //       printArrow(event);
+  //     }
+  //   }
+
+  //   window.addEventListener('keydown', handleKeyDown);
+
+  //   return () => {
+  //     window.removeEventListener('keydown', handleKeyDown);
+  //   };
+  // }, []);
+
+
   return (
     <div className='home-page'>
         <Head>

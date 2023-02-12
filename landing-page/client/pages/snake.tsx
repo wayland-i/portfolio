@@ -1,39 +1,32 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Head from 'next/head';
-import {game} from '../scripts/snakeLogic';
+import { snake } from '../public/file';
+
 
 
 const Snake = () => {
 
-    // let grid = document.querySelector(".grid");
-    // console.log(document.getElementsByClassName('grid')[0])
+    function playSanke() {
+
+        snake()
+        const startButton = document.querySelector('.startButton')
+        startButton.style.display = 'none'
+
+    }
+        
     
-    
-    // console.log(document.querySelector('.grid'))
-
-    // document.addEventListener('DOMContentLoaded', () => {
-    //     console.log(document.querySelector('.grid'))
-    // });
-
-
-
-
   return (
     <div>
 
         <Head>
           <title>{`Ian Iversen's Portfolio`}</title>
           <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-          {/* <script src='/file.js' defer></script> */}
+          {/* <script src='../public/file.js' defer></script> */}
         </Head>
         <h1>Snake</h1>
+        <button onClick={playSanke} className="startButton">Play Snake</button>
 
-        {/* {game()} */}
-        {/* { document ? document.onload = function() {
-            game()
-        } : null} */}
 
-        {/* blog HTML */}
         <h1>Nokia 3310 snake</h1>
         <div className="scoreDisplay"></div>
         <div className="grid"></div>
