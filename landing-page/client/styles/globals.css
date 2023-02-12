@@ -230,5 +230,11 @@ p {
 
 .startButton {
   display: block;
-  
+}
+
+.snake-buttons {
+  display: flex;
+  justify-content: space-around;
+  /* text-align: center; */
+  /* width: 100%; */
 }

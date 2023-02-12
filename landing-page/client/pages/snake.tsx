@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import Head from 'next/head';
 import { snake } from '../public/file';
+import Link from 'next/link';
+import Image from 'next/image';
 
 
 
@@ -30,14 +32,23 @@ const Snake = () => {
         <h1>Nokia 3310 snake</h1>
         <div className="scoreDisplay"></div>
         <div className="grid"></div>
-        <div className="button">
-        <button className="top">top</button>
-        <button className="bottom">bottom</button>
-        <button className="left">left</button>
-        <button className="right">right</button>
+        <div className="snake-buttons">
+            <div>
+                <button className="top">top</button>
+                <button className="bottom">bottom</button>
+                <button className="left">left</button>
+                <button className="right">right</button>
+            </div>
         </div>
         <div className="popup">
         <button className="playAgain">play Again</button>
+        </div>
+
+        <div>
+            <Link href={'/'}>
+                <Image src="/assets/address_book_home.png" alt="home" width={35} height={35} />
+                Return Home
+            </Link>
         </div>
 
         
