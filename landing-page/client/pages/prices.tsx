@@ -1,4 +1,6 @@
 import React, { use, useEffect, useState } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const Prices = () => {
 
@@ -51,7 +53,12 @@ const Prices = () => {
   return (
     <div>
         <h1>Prices</h1>
-        
+        <div>
+            <Link href={'/'}>
+                <Image src="/assets/address_book_home.png" alt="home" width={35} height={35} />
+                Return Home
+            </Link>
+        </div>
     </div>
   )
 }
