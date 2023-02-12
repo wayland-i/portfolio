@@ -29,15 +29,21 @@ const Snake = () => {
         <button onClick={playSanke} className="startButton">Play Snake</button>
 
 
-        <h1>Nokia 3310 snake</h1>
+        {/* <h1>Nokia 3310 snake</h1> */}
         <div className="scoreDisplay"></div>
         <div className="grid"></div>
         <div className="snake-buttons">
-            <div>
-                <button className="top">top</button>
-                <button className="bottom">bottom</button>
-                <button className="left">left</button>
-                <button className="right">right</button>
+            <div className='snake-buttons-container'>
+                <div className='buttons-left'>
+                    <button className="left">left</button>
+                </div>
+                <div className='buttons-center'>
+                    <button className="top">top</button>
+                    <button className="bottom">bottom</button>
+                </div>
+                <div className='buttons-right'>
+                    <button className="right">right</button>
+                </div>
             </div>
         </div>
         <div className="popup">
