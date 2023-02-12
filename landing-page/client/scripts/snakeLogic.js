@@ -24,7 +24,7 @@ export function snake() {
     let currentSnake = [2, 1, 0];
     let direction = 1;
     let score = 0;
-    let speed = 0.8;
+    // let speed = 0.8;
     let intervalTime = 0;
     let interval = 0;
     
@@ -47,7 +47,7 @@ export function snake() {
         //random apple
         direction = 1;
         scoreDisplay.innerHTML = score;
-        intervalTime = 1000;
+        intervalTime = 100;
         currentSnake = [2, 1, 0];
         currentIndex = 0;
         currentSnake.forEach((index) => squares[index].classList.add("snake"));
@@ -56,7 +56,7 @@ export function snake() {
     
     function randomApple(squares){ 
         do { 
-            appleIndex =Math.floor(Math.random() * squares.length) 
+            appleIndex = Math.floor(Math.random() * squares.length) 
         } while(squares[appleIndex].classList.contains("snake")) 
         squares[appleIndex].classList.add("apple") 
     } 
@@ -104,9 +104,9 @@ export function snake() {
             randomApple(squares) 
             score++ 
             scoreDisplay.textContent = score 
-            clearInterval(interval) 
-            intervalTime = intervalTime * speed 
-            interval = setInterval(moveOutcome, intervalTime) 
+            // clearInterval(interval) 
+            // intervalTime = intervalTime * speed 
+            // interval = setInterval(moveOutcome, intervalTime) 
         }
     } 
     

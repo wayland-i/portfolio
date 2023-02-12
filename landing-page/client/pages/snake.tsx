@@ -25,7 +25,7 @@ const Snake = () => {
           <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
           {/* <script src='../public/file.js' defer></script> */}
         </Head>
-        <h1>Snake</h1>
+        {/* <h1>Snake</h1> */}
         <button onClick={playSanke} className="startButton">Play Snake</button>
 
 
@@ -47,7 +47,7 @@ const Snake = () => {
             </div>
         </div>
         <div className="popup">
-        <button className="playAgain">play Again</button>
+            <button className="playAgain">play Again?</button>
         </div>
 
         <div>
