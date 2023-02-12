@@ -1,5 +1,10 @@
 export function snake() {
 
+    //to edit size of grid
+    //1. .grid in css width and heigh need to be adjusted (og was 200px h/w)
+    //2. width needs to be adjusted (og was 10)
+    //3. for loop in createBoard needs to be updated (og was 100)
+    //4. .grid div is the squares... essentially size of the snake an apples
         
     let grid = document.querySelector(".grid");
     let popup = document.querySelector(".popup");
