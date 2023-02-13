@@ -6,9 +6,9 @@ export function snake() {
     //3. for loop in createBoard needs to be updated (og was 100)
     //4. .grid div is the squares... essentially size of the snake an apples
     //SOLUTION:
-    //1. .grid in css from 200px h/w to 400px h/w
-    //2. width in from 10 to 20
-    //3. for loop in createBoard from 100 to 400
+    //1. .grid in css from 200px h/w to 400px h/w to 800px h/w
+    //2. width in from 10 to 20 to 40
+    //3. for loop in createBoard from 100 to 400 to 1600
         
     let grid = document.querySelector(".grid");
     let popup = document.querySelector(".popup");

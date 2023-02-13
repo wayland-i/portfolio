@@ -15,6 +15,17 @@ const Snake = () => {
         startButton.style.display = 'none'
 
     }
+
+    // const handleKeyPress = e => {
+    //     //it triggers by pressing the enter key
+    //   if (e.keyCode === 13) {
+    //     playSanke();
+    //   }
+    // };
+    
+    // useEffect(()=>{
+    //     window.addEventListener('keydown', handleKeyPress);
+    // },[])
         
     
   return (
