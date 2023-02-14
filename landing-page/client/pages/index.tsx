@@ -81,10 +81,15 @@ const Home: NextPage = () => {
         </div>
         <div>
           <Link href={'/snake'} className='landing-link'>
-            <Image src="/assets/snake.png" alt="AC plug" width={35} height={35} />
+            <Image 
+              // src="/assets/snake.png"
+              // src="/assets/snake-1.png" 
+              // src="/assets/snake-2.png" 
+              src="/assets/snake-3.png"  
+              alt="AC plug" width={40} height={40} />
             <p>
               {/* Coming Soon */}
-              Snake Game
+              Snake
             </p>
           </Link>
         </div>

@@ -1,3 +1,4 @@
+
 export function snake() {
 
     //to edit size of grid
@@ -27,6 +28,15 @@ export function snake() {
     // let speed = 0.8;
     let intervalTime = 0;
     let interval = 0;
+    let flag = document.createElement("img")
+    flag.src = ('assets/flag.png')
+    flag.po
+    flag.width = 40;
+    flag.height = 25;
+    flag.style.position = 'relative'; // set the position to relative
+    flag.style.left = '-12px'; // move the image 50 pixels to the left
+    flag.style.top = '-5px';
+
     
     document.addEventListener("onkeydown", control);
     createBoard();
@@ -58,7 +68,14 @@ export function snake() {
         do { 
             appleIndex = Math.floor(Math.random() * squares.length) 
         } while(squares[appleIndex].classList.contains("snake")) 
-        squares[appleIndex].classList.add("apple") 
+        squares[appleIndex].classList.add('apple')
+        // console.log(document.getElementsByClassName('apple')[0])
+        let appleSquare = document.getElementsByClassName('apple')[0]
+        console.log(appleSquare.append(flag));
+        //  if (appleSquare.nodeType)
+        //     appleSquare.appendChild('img')
+        // innerHTML(<img src='./client/public/assets.flag.png'></img>)
+        // .classList.add("apple") 
     } 
     
     
@@ -78,7 +95,7 @@ export function snake() {
         squares[tail].classList.remove("snake") 
         currentSnake.unshift(currentSnake[0]+direction)  
         // movement ends here  
-        eatApple(squares,tail)  
+        eatApple(squares, tail)  
         squares[currentSnake[0]].classList.add("snake")  
     }
     

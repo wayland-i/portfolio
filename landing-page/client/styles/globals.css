@@ -200,8 +200,8 @@ p {
   height: 400px;
   /* border: 10px solid black; */
   border: 10px solid #c3c3c3;
-  border-top: 10px solid white;
-  border-left: 10px solid white;
+  /* border-top: 10px solid white; */
+  /* border-left: 10px solid white; */
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -209,18 +209,30 @@ p {
 .grid div {
   width: 20px;
   height: 20px;
-  /*border:1px black solid;
-  box-sizing:border-box*/
+  border: 2px solid black;
+  box-sizing:border-box;
+  background-color: #c3c3c3;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
 }
-.snake {
-  /* background-color: blue; */
-  background-color: #000000;
+.grid .snake {
+  /* background-color: #000000; */
+  background-color: #7c7c7c;
+  border: 1px solid black;
+
   
 }
-.apple {
-  /* background-color: yellow; */
+.grid .apple {
+  /* background-color: transparent; */
+  /* border: none; */
   background-color: #fdffff;
+  /* background-color: #7c7c7c; */
+  /* background-image: url('assets/flag.png'); */
   /* border-radius: 20px; */
+  /* background-image: url('/client/public/assets/flag.png'); */
+  /* mask-image: url('/flag.png') 0 0; */
+  /* background-image:url('/flag.png') 0 0; */
+  /* background: url("/client/public/assets/flag.png"); */
 }
 .popup {
   /* background-color: rgb(32, 31, 31); */
@@ -232,12 +244,15 @@ p {
   display: none;
   justify-content: center;
   align-items: center;
+  
 }
 
 .playAgain {
   font-size: 3rem;
   width: fit-content;
   margin: 2%;
+  position: absolute;
+  /* width: 1000px; */
 }
 
 .startButton {
