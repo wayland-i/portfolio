@@ -40,13 +40,21 @@ const Snake = () => {
             {/* <script src='../public/file.js' defer></script> */}
             </Head>
 
-
+            {/* <div className='window'>
+                <div className="title-bar">
+                <div className="title-bar-text">Important Links</div>
+                <div className="title-bar-controls">
+                    <button aria-label="Minimize" />
+                    <button aria-label="Maximize" />
+                    <button aria-label="Close" />
+                </div>
+                </div> */}
 
 
             
                     {/* <h1>Snake</h1> */}
                     <button onClick={playSanke} className="startButton">Play Snake</button>
-
+                {/* <div className='window-body'> */}
 
                     {/* <h1>Nokia 3310 snake</h1> */}
                     <div className="scoreDisplay"></div>
@@ -75,6 +83,8 @@ const Snake = () => {
                             Return Home
                         </Link>
                     </div>
+                 {/* </div>
+            </div> */}
 
         </div>
     </>

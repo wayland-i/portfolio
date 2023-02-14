@@ -30,7 +30,6 @@ export function snake() {
     let interval = 0;
     let flag = document.createElement("img")
     flag.src = ('assets/flag.png')
-    flag.po
     flag.width = 40;
     flag.height = 25;
     flag.style.position = 'relative'; // set the position to relative

@@ -225,7 +225,8 @@ p {
 .grid .apple {
   /* background-color: transparent; */
   /* border: none; */
-  background-color: #fdffff;
+  /* background-color: #fdffff; */
+  background-color: #c3c3c3;
   /* background-color: #7c7c7c; */
   /* background-image: url('assets/flag.png'); */
   /* border-radius: 20px; */
@@ -263,6 +264,7 @@ p {
 }
 
 .scoreDisplay {
+  font-family: 'MyFont', sans-serif;
   font-size: 3rem;
   margin: 2%;
 }
