@@ -37,7 +37,7 @@ export function snake() {
     flag.style.top = '-5px';
 
     
-    document.addEventListener("onkeydown", control);
+    document.addEventListener("onkeydown", handleKeyDown);
     createBoard();
     startGame();
     playAgain.addEventListener("click", replay); 
@@ -83,19 +83,20 @@ export function snake() {
         if(checkForHits(squares)){
             alert("you hit something") 
             popup.style.display="flex" 
-            return clearInterval(interval) 
-        }else{ 
+            return clearInterval(interval)
+        } 
+        else{ 
             moveSnake(squares) 
         }
     } 
     
     function moveSnake(squares){
-        let tail = currentSnake.pop() 
-        squares[tail].classList.remove("snake") 
-        currentSnake.unshift(currentSnake[0]+direction)  
-        // movement ends here  
-        eatApple(squares, tail)  
-        squares[currentSnake[0]].classList.add("snake")  
+            let tail = currentSnake.pop() 
+            squares[tail].classList.remove("snake") 
+            currentSnake.unshift(currentSnake[0]+direction)  
+            // movement ends here  
+            eatApple(squares, tail)  
+            squares[currentSnake[0]].classList.add("snake")  
     }
     
     function checkForHits(squares){  
@@ -103,11 +104,15 @@ export function snake() {
             (currentSnake[0] + width >=(width*width) && direction === width) || //bottom
             (currentSnake[0] % width === width -1 && direction === 1) ||   //right
             (currentSnake[0] % width === 0 && direction === -1) ||   //left
-            (currentSnake[0] - width <= -1 && direction === -width) || //top
-            squares[currentSnake[0] + direction].classList.contains("snake")   
+            (currentSnake[0] - width <= -1 && direction === -width) //removed || to get rid of bottom //top changed from "<= 0" to "<= -1"
+            // squares[currentSnake[0] + direction].classList.contains("snake")   
             ){ 
                 return true  
-            }else{  
+            } if (squares[currentSnake[0] + direction].classList.contains("snake")) { //when you hit yourself, added after direction disqualification fixed
+                // console.log('hit self')
+                return true
+            }
+            else{  
                 return false 
             }
         }
@@ -119,24 +124,12 @@ export function snake() {
             currentSnake.push(tail)
             randomApple(squares) 
             score++ 
-            scoreDisplay.textContent = score 
+            scoreDisplay.textContent = score
             // clearInterval(interval) 
             // intervalTime = intervalTime * speed 
             // interval = setInterval(moveOutcome, intervalTime) 
         }
     } 
-    
-    function control(e){ 
-        if (e.keycode===39){
-            direction = 1 // right 
-        }else if (e.keycode===38){ 
-            direction = -width //if we press the up arrow, the snake will go ten divs up
-        }else if (e.keycode===37){ 
-            direction = -1 // left, the snake will go left one div
-        }else if (e.keycode===40){
-            direction = +width // down the snake head will instantly appear 10 divs below from the current div 
-        } 
-    }
     
     up.addEventListener("click",()=>direction= -width ) 
     bottom.addEventListener("click",()=>direction= +width ) 
@@ -151,19 +144,16 @@ export function snake() {
         popup.style.display = "none"; 
     }  
         
-    function arrowControl(e) {
-            console.log(e.code)
-        }
             
             
     function handleKeyDown(e) {
-        if (e.keyCode===39){
+        if (e.keyCode===39 && direction != -1){
             direction = 1 // right 
-        }else if (e.keyCode===38){ 
+        }else if (e.keyCode===38 && direction != width){ 
             direction = -width //if we press the up arrow, the snake will go ten divs up
-        }else if (e.keyCode===37){ 
+        }else if (e.keyCode===37 && direction != 1){ 
             direction = -1 // left, the snake will go left one div
-        }else if (e.keyCode===40){
+        }else if (e.keyCode===40 && direction != -width){
             direction = +width // down the snake head will instantly appear 10 divs below from the current div 
         } 
     }

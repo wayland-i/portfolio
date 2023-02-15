@@ -85,7 +85,7 @@ const Home: NextPage = () => {
               // src="/assets/snake.png"
               // src="/assets/snake-1.png" 
               // src="/assets/snake-2.png" 
-              src="/assets/snake-3.png"  
+              src="/assets/snake-4.png"  
               alt="AC plug" width={40} height={40} />
             <p>
               {/* Coming Soon */}
