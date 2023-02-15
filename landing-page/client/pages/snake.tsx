@@ -59,7 +59,22 @@ const Snake = () => {
                     {/* <h1>Nokia 3310 snake</h1> */}
                     <div className="scoreDisplay"></div>
                     <div className="grid"></div>
-                    <div className="snake-buttons">
+                    <div className='leader-board'>
+                        <h1>LeaderBoard</h1>
+                        <hr></hr>
+                        <div className='records'>
+                            <h3>name</h3>
+                            {/* <hr className='vertical-line'></hr> */}
+                            <h3>score</h3>
+                        </div>
+                        <hr></hr>
+                        <div className='records'>
+                            <h3>name</h3>
+                            {/* <hr className='vertical-line'></hr> */}
+                            <h3>score</h3>
+                        </div>
+                    </div>
+                    {/* <div className="snake-buttons">
                         <div className='snake-buttons-container'>
                             <div className='buttons-left'>
                                 <button className="left">left</button>
@@ -72,7 +87,7 @@ const Snake = () => {
                                 <button className="right">right</button>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="popup">
                         <button className="playAgain">play Again?</button>
                     </div>

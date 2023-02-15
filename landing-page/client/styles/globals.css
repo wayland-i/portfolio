@@ -329,3 +329,20 @@ p {
   height: 100px;
   font-size: 1.5rem;
 }
+
+
+/* leader board */
+.leader-board {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.records {
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: space-around; */
+  /* width: fit-content; */
+  /* text-align: center; */
+  
+}

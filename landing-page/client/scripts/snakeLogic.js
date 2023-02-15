@@ -79,7 +79,7 @@ export function snake() {
     
     
     function moveOutcome (){ 
-        let squares =document.querySelectorAll(".grid div") 
+        let squares = document.querySelectorAll(".grid div") 
         if(checkForHits(squares)){
             alert("you hit something") 
             popup.style.display="flex" 
@@ -131,10 +131,11 @@ export function snake() {
         }
     } 
     
-    up.addEventListener("click",()=>direction= -width ) 
-    bottom.addEventListener("click",()=>direction= +width ) 
-    left.addEventListener("click",()=>direction= -1 ) 
-    right.addEventListener("click",()=>direction= 1 )
+    //for when buttons clicked
+    // up.addEventListener("click",()=>direction= -width ) 
+    // bottom.addEventListener("click",()=>direction= +width ) 
+    // left.addEventListener("click",()=>direction= -1 ) 
+    // right.addEventListener("click",()=>direction= 1 )
     
     function replay() { 
         grid.innerHTML=""
