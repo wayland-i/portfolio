@@ -82,14 +82,6 @@ const Snake = () => {
 
 
 
-    //retrieving score from html every .15 seconds
-    // if (playing) {
-    //     setInterval(() => {
-    //         let num = document.querySelector(".scoreDisplay");
-    //         setScore(num.textContent)
-    //     }, 150)
-
-    // }
     
   return (
     <>
@@ -101,10 +93,24 @@ const Snake = () => {
             <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
             {/* <script src='../public/file.js' defer></script> */}
             </Head>
-            
-                    { player === "???" || editing ? <h3>Enter Name</h3> :
-                    <button onClick={playSanke} className="startButton">Play Snake</button>
+            <div className='snake-header'>
+                    { player === "???" || editing ? <div className='instruction'>
+                        <h3>Instructions</h3>
+                        <h4>1. replace ??? with 3 characters, press enter when done</h4> 
+                        <h4>2. press "play snake" and use arrow keys to move</h4>
+                        <h4>3. Beat the highscore!</h4>
+                        </div>: 
+                        <div className='instruction'>
+                        <h3>Instructions</h3>
+                        <h4>1. replace ??? with 3 characters, press enter when done</h4> 
+                        <h4>2. press "play snake" and use arrow keys to move</h4>
+                        <h4>3. Beat the highscore!</h4>
+                        <button onClick={playSanke} className="startButton">Play Snake</button>
+                        </div>
                     }
+
+
+            </div>
                 
                     {/* <div className="scoreDisplay"></div> */}
                     <div className='window-snake'>
@@ -119,6 +125,10 @@ const Snake = () => {
                     <div className='score-board'>
                     {/* <div className="scoreDisplay">{score}</div> */}
                         <h1 className='scoreDisplay'>{score}</h1>
+                        
+                        <div className="popup">
+                            <button className="playAgain">{"(:"}</button>
+                        </div>
 
                         {editing ? (
                             <input
@@ -137,13 +147,13 @@ const Snake = () => {
                     </div>
                     <div className='leader-board'>
                         <h1>LeaderBoard</h1>
-                        <hr></hr>
+                        <hr className='line'></hr>
                         <div className='records'>
                             <h3>name</h3>
                             {/* <hr className='vertical-line'></hr> */}
                             <h3>score</h3>
                         </div>
-                        <hr></hr>
+                        <hr className='line'></hr>
                         <div className='records'>
                             <h3>name</h3>
                             {/* <hr className='vertical-line'></hr> */}
@@ -164,9 +174,11 @@ const Snake = () => {
                             </div>
                         </div>
                     </div> */}
-                    <div className="popup">
+
+                    {/* OG POP UP */}
+                    {/* <div className="popup">
                         <button className="playAgain">play Again?</button>
-                    </div>
+                    </div> */}
 
                     <div>
                         <Link href={'/'}>
