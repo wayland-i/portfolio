@@ -1,4 +1,5 @@
 
+
 export function snake() {
 
     //to edit size of grid
@@ -55,7 +56,7 @@ export function snake() {
         randomApple(squares);
         //random apple
         direction = 1;
-        scoreDisplay.innerHTML = score;
+        scoreDisplay.textContent = score;
         intervalTime = 100;
         currentSnake = [2, 1, 0];
         currentIndex = 0;
@@ -124,7 +125,7 @@ export function snake() {
             squares[tail].classList.add("snake") 
             currentSnake.push(tail)
             randomApple(squares) 
-            score++ 
+            score++
             scoreDisplay.textContent = score
             // clearInterval(interval) 
             // intervalTime = intervalTime * speed 
@@ -165,5 +166,7 @@ export function snake() {
     return () => {
         window.removeEventListener('keydown', handleKeyDown);
     };
-                        
+    
 }
+
+module.exports.score

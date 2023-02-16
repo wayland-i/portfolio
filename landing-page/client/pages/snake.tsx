@@ -10,6 +10,31 @@ import "98.css";
 const Snake = () => {
 
     const [playing, setPlaying] = useState(false)
+    const [score, setScore] = useState('0');
+
+    const [editing, setEditing] = useState(false);
+    const [player, setPlayer] = useState('???');
+
+    const handleDoubleClick = () => {
+        setEditing(true);
+    };
+
+    const handleChange = (event) => {
+        setPlayer(event.target.value);
+    };
+
+    const handleKeyPress = (e) => {
+        if (e.key === 'Enter') {
+          setEditing(false)
+        }
+      };
+    
+
+    const handleBlur = () => {
+        setEditing(false);
+    };
+
+
 
     function playSanke() {
 
@@ -33,8 +58,6 @@ const Snake = () => {
     // }, [])
     
 
-
-
     // useEffect(()=>{
 
     //     let grid = document.querySelector(".grid");
@@ -56,6 +79,17 @@ const Snake = () => {
 
         
     // }, [playing])
+
+
+
+    //retrieving score from html every .15 seconds
+    // if (playing) {
+    //     setInterval(() => {
+    //         let num = document.querySelector(".scoreDisplay");
+    //         setScore(num.textContent)
+    //     }, 150)
+
+    // }
     
   return (
     <>
@@ -67,25 +101,12 @@ const Snake = () => {
             <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
             {/* <script src='../public/file.js' defer></script> */}
             </Head>
-
-            {/* <div className='window'>
-                <div className="title-bar">
-                <div className="title-bar-text">Important Links</div>
-                <div className="title-bar-controls">
-                    <button aria-label="Minimize" />
-                    <button aria-label="Maximize" />
-                    <button aria-label="Close" />
-                </div>
-                </div> */}
-
-
             
-                    {/* <h1>Snake</h1> */}
+                    { player === "???" || editing ? <h3>Enter Name</h3> :
                     <button onClick={playSanke} className="startButton">Play Snake</button>
-                {/* <div className='window-body'> */}
-
-                    {/* <h1>Nokia 3310 snake</h1> */}
-                    <div className="scoreDisplay"></div>
+                    }
+                
+                    {/* <div className="scoreDisplay"></div> */}
                     <div className='window-snake'>
                             <div className="title-bar" id='snake-title-bar'>
                             <div className="title-bar-text">Snake</div>
@@ -95,6 +116,23 @@ const Snake = () => {
                             <button aria-label="Close" />
                             </div>
                             </div>
+                    <div className='score-board'>
+                    {/* <div className="scoreDisplay">{score}</div> */}
+                        <h1 className='scoreDisplay'>{score}</h1>
+
+                        {editing ? (
+                            <input
+                            id='player-name'
+                            type="text"
+                            value={player}
+                            onChange={handleChange}
+                            onKeyPress={handleKeyPress}
+                            onBlur={handleBlur}
+                            />
+                        ) : (
+                            <h1 onDoubleClick={handleDoubleClick}>{player}</h1>
+                        )}
+                    </div>
                     <div className="grid"></div>
                     </div>
                     <div className='leader-board'>
@@ -137,8 +175,7 @@ const Snake = () => {
                         </Link>
                     </div>
                     
-                 {/* </div>
-            </div> */}
+ 
 
         </div>
     </>
