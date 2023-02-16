@@ -151,18 +151,19 @@ const Snake = () => {
                     </div>
                     <div className='leader-board'>
                         <h1>LeaderBoard</h1>
-                        <hr className='line'></hr>
+                        <h2>Coming soon...</h2>
+                        {/* <hr className='line'></hr>
                         <div className='records'>
                             <h3>name</h3>
-                            {/* <hr className='vertical-line'></hr> */}
+                            
                             <h3>score</h3>
                         </div>
                         <hr className='line'></hr>
                         <div className='records'>
                             <h3>name</h3>
-                            {/* <hr className='vertical-line'></hr> */}
+                            
                             <h3>score</h3>
-                        </div>
+                        </div> */}
                     </div>
                     {/* <div className="snake-buttons">
                         <div className='snake-buttons-container'>
