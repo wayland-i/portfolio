@@ -58,6 +58,25 @@ const Snake = () => {
         setScore(numScore)
     }
 
+    if (typeof window !== 'undefined') {
+        // window is defined, can use it here
+        // window.alert('Hello, world!');
+        if (window) {
+            // console.log(window)
+            // console.log(window.alert.length)
+        }
+        // console.log('you are cool')
+        // let jsScore = document.querySelector(".scoreDisplay")
+        // let numScore = jsScore.textContent
+        // setScore(numScore)
+      } else {
+        // window is not defined, do something else
+        null
+        // console.log('Hello, world!');
+      }
+      
+      
+
 
 
     
