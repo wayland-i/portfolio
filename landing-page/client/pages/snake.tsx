@@ -45,40 +45,18 @@ const Snake = () => {
 
     }
 
-    // useEffect(()=>{
+    // if (document.querySelector('.popup').display('none'))
 
-    //     let grid = document.querySelector(".grid");
+    // if (document.querySelector('.popup')) {
+    //     console.log('game over')
+    // }
 
-    //         for (let i = 0; i < 400; i++) {
-    //             let div = document.createElement("div");
-    //             grid.appendChild(div);
-    //         }
 
-        
-    // }, [])
-    
-
-    // useEffect(()=>{
-
-    //     let grid = document.querySelector(".grid");
-        
-
-    //     if (!playing){
-    //         for (let i = 0; i < 200; i++) {
-    //             let div = document.createElement("div");
-    //             div.classList.add('temp-div');
-    //             grid.appendChild(div);   
-    //         }
-    //     } else if (playing) {
-    //         // let divs = grid.getElementsByClassName('temp-dev');
-    //         const divs = Array.from(document.getElementsByClassName('temp-div'));
-    //         for (const div of divs) {
-    //           div.remove();
-    //         }
-    //     }
-
-        
-    // }, [playing])
+    function setScoreToState() {
+        let jsScore = document.querySelector(".scoreDisplay")
+        let numScore = jsScore.textContent
+        setScore(numScore)
+    }
 
 
 
@@ -106,8 +84,13 @@ const Snake = () => {
                         <h4>2. press "play snake" and use arrow keys to move</h4>
                         <h4>3. Beat the highscore!</h4>
                         <button onClick={playSanke} className="startButton">Play Snake</button>
+                        <div className="popup">
+                        <button className="playAgain">Play Again?</button>
                         </div>
+                        </div>
+                        
                     }
+                    
 
 
             </div>
@@ -126,9 +109,11 @@ const Snake = () => {
                     {/* <div className="scoreDisplay">{score}</div> */}
                         <h1 className='scoreDisplay'>{score}</h1>
                         
-                        <div className="popup">
-                            <button className="playAgain">{"(:"}</button>
-                        </div>
+                        {/* <div className="popup">
+                            <button className="playAgain">
+                                <Image src="/assets/recycle_bin_empty_cool-5.png" alt="Smiley Face" width={40} height={40}/>
+                            </button>
+                        </div> */}
 
                         {editing ? (
                             <input
@@ -177,7 +162,7 @@ const Snake = () => {
 
                     {/* OG POP UP */}
                     {/* <div className="popup">
-                        <button className="playAgain">play Again?</button>
+                        <button className="playAgain">?</button>
                     </div> */}
 
                     <div>

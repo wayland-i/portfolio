@@ -84,7 +84,7 @@ export function snake() {
         let squares = document.querySelectorAll(".grid div") 
         if(checkForHits(squares)){
             alert("you hit something") 
-            popup.style.display="flex" 
+            popup.style.display="flex"
             return clearInterval(interval)
         } 
         else{ 
