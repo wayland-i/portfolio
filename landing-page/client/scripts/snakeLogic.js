@@ -70,7 +70,8 @@ export function snake() {
         squares[appleIndex].classList.add('apple')
         // console.log(document.getElementsByClassName('apple')[0])
         let appleSquare = document.getElementsByClassName('apple')[0]
-        console.log(appleSquare.append(flag));
+        appleSquare.append(flag);
+        // console.log(appleSquare.append(flag));
         //  if (appleSquare.nodeType)
         //     appleSquare.appendChild('img')
         // innerHTML(<img src='./client/public/assets.flag.png'></img>)
