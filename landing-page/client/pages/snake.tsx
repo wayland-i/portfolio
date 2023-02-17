@@ -10,7 +10,7 @@ import "98.css";
 const Snake = () => {
 
     const [playing, setPlaying] = useState(false)
-    const [score, setScore] = useState('0');
+    const [score, setScore] = useState(0);
 
     const [editing, setEditing] = useState(false);
     const [player, setPlayer] = useState('???');
@@ -39,11 +39,16 @@ const Snake = () => {
     function playSanke() {
 
         setPlaying(true)
-        snake()
+        snake(setScore)
+        // console.log('game has ended score has set')
+        // console.log(endScore)
+        // setScore(endScore);
+        // setScore(score)
         const startButton = document.querySelector('.startButton') as HTMLButtonElement;
         startButton.style.display = 'none'
 
     }
+
 
     // if (document.querySelector('.popup').display('none'))
 
@@ -51,11 +56,17 @@ const Snake = () => {
     //     console.log('game over')
     // }
 
+    useEffect(()=>{
+        if (document.querySelector('.popup')) {
+            console.log('game over')
+        }
+    }, [])
+
 
     function setScoreToState() {
         let jsScore = document.querySelector(".scoreDisplay")
         let numScore = jsScore.textContent
-        setScore(numScore)
+        // setScore(numScore)
     }
 
     if (typeof window !== 'undefined') {
@@ -76,7 +87,6 @@ const Snake = () => {
       }
       
       
-
 
 
     
@@ -154,16 +164,16 @@ const Snake = () => {
                         <h2>Coming soon...</h2>
                         {/* <hr className='line'></hr>
                         <div className='records'>
-                            <h3>name</h3>
-                            
-                            <h3>score</h3>
+                        <h3>name</h3>
+                        
+                        <h3>score</h3>
                         </div>
                         <hr className='line'></hr>
                         <div className='records'>
-                            <h3>name</h3>
-                            
-                            <h3>score</h3>
-                        </div> */}
+                        <h3>name</h3>
+                        
+                        <h3>score</h3>
+                    </div> */}
                     </div>
                     {/* <div className="snake-buttons">
                         <div className='snake-buttons-container'>

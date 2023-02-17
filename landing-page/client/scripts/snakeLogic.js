@@ -1,6 +1,6 @@
 
 
-export function snake() {
+export function snake( setScore ) {
 
     //to edit size of grid
     //1. .grid in css width and heigh need to be adjusted (og was 200px h/w)
@@ -63,6 +63,7 @@ export function snake() {
         currentSnake.forEach((index) => squares[index].classList.add("snake"));
         interval = setInterval(moveOutcome, intervalTime);
     }
+
     
     function randomApple(squares){ 
         do { 
@@ -83,8 +84,9 @@ export function snake() {
     function moveOutcome (){ 
         let squares = document.querySelectorAll(".grid div") 
         if(checkForHits(squares)){
-            alert("you hit something") 
+            // alert("you hit something") 
             popup.style.display="flex"
+            setScore(score)
             return clearInterval(interval)
         } 
         else{ 
@@ -133,11 +135,6 @@ export function snake() {
         }
     } 
     
-    //for when buttons clicked
-    // up.addEventListener("click",()=>direction= -width ) 
-    // bottom.addEventListener("click",()=>direction= +width ) 
-    // left.addEventListener("click",()=>direction= -1 ) 
-    // right.addEventListener("click",()=>direction= 1 )
     
     function replay() { 
         grid.innerHTML=""
@@ -166,7 +163,8 @@ export function snake() {
     return () => {
         window.removeEventListener('keydown', handleKeyDown);
     };
+
     
 }
 
-module.exports.score
+// module.exports.score
