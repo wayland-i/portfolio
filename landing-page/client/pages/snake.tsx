@@ -73,9 +73,26 @@ const Snake = () => {
         .then((data) => console.log(data))
 
 
-        fetch('https://vast-inlet-63510.herokuapp.com/leaderboards')
-        .then((response) => response.json())
-        .then((data) => setLeaderBoard(data))
+        // fetch('/leaderboards')
+        // .then((response) => response.json())
+        // .then((data) => setLeaderBoard(data))
+
+        
+
+        // setLeaderBoard([...leaderboard, formData])
+
+        leaderboard.push(formData)
+
+        const newLeaderboard = leaderboard.concat(leaderboard);
+
+
+
+        // // Sort the concatenated array based on the "score" property in descending order
+        newLeaderboard.sort((a, b) => b.score - a.score);
+
+        // // Update the state with the sorted array
+        setLeaderBoard(newLeaderboard);
+
 
         }
 
@@ -91,21 +108,27 @@ const Snake = () => {
         fetch('https://vast-inlet-63510.herokuapp.com/leaderboards')
         .then((response) => response.json())
         .then((data) => setLeaderBoard(data))
-    }, [])
+    }, [score])
 
     
     const entries = (leaderboard) => {
-        return leaderboard?.map(entry => (
+        const usedIds = []; // to keep track of used ids
+        return leaderboard?.map(entry => {
+          if (usedIds.some(id => id === entry.id)) {
+            return null; // skip this entry if its id is already used
+          }
+          usedIds.push(entry.id); // add this id to the usedIds array
+          return (
             <li key={entry.id} className='list'>
-                <div className='records'>
-                    <h3>{entry.player}</h3>
-                    <h3>{entry.score}</h3>
-                </div>
-                    <hr className='line'></hr>
+              <div className='records'>
+                <h3>{entry.player}</h3>
+                <h3>{entry.score}</h3>
+              </div>
+              <hr className='line'></hr>
             </li>
-            
-        ))
-    }
+          )
+        })
+      }
 
     
   return (
