@@ -62,6 +62,9 @@ const Snake = () => {
             // console.log(formData);
             // console.log(JSON.stringify(formData))
 
+            //https://vast-inlet-63510.herokuapp.com
+            //http://127.0.0.1:3000/leaderboards
+
         fetch('https://vast-inlet-63510.herokuapp.com/leaderboards', {
             method: "POST",
             headers: {
