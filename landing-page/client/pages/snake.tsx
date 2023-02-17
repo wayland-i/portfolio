@@ -81,17 +81,17 @@ const Snake = () => {
 
         // setLeaderBoard([...leaderboard, formData])
 
-        // leaderboard.push(formData)
+        leaderboard.push(formData)
 
-        // const newLeaderboard = leaderboard.concat(leaderboard);
+        const newLeaderboard = leaderboard.concat(leaderboard);
 
 
 
-        // // // Sort the concatenated array based on the "score" property in descending order
-        // newLeaderboard.sort((a, b) => b.score - a.score);
+        // // Sort the concatenated array based on the "score" property in descending order
+        newLeaderboard.sort((a, b) => b.score - a.score);
 
-        // // // Update the state with the sorted array
-        // setLeaderBoard(newLeaderboard);
+        // // Update the state with the sorted array
+        setLeaderBoard(newLeaderboard);
 
 
         }
