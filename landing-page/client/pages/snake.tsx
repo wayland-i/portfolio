@@ -3,11 +3,18 @@ import Head from 'next/head';
 import { snake } from '../scripts/snakeLogic';
 import Link from 'next/link';
 import Image from 'next/image';
+import Router from 'next/router';
 import "98.css";
 
 
 
 const Snake = () => {
+
+    useEffect(()=>{
+        if (window.innerWidth < 800) {
+          Router.push('/mobile');
+        }
+      }, [])
 
     const [playing, setPlaying] = useState(false)
     const [score, setScore] = useState(0);

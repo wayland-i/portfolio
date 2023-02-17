@@ -1,12 +1,42 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Router from 'next/router';
 import "98.css";
 import Link from 'next/link';
 import Window from '../comps/window';
 import { useEffect } from 'react';
+import { loadGetInitialProps } from 'next/dist/shared/lib/utils';
+// import { getDeviceType } from './utils/deviceType'; // function to detect device type
 
 const Home: NextPage = () => {
+
+  // useEffect(()=>{
+  //   console.log(window.innerWidth)
+  //   if (window.innerWidth < 800) {
+  //     Router.push('/mobile');
+  //   }
+  // }, [])
+
+  // useEffect(()=>{
+    
+  //     const isMobile = getDeviceType() === 'mobile';
+  //     if (isMobile) {
+  //       // redirect to a different page if user is on mobile
+  //       if (typeof window !== 'undefined') {
+  //         // console.log('you are on m')
+  //         // Router.push('/mobile-page');
+  //       } else {
+  //         // server-side redirection
+  //         // const res = await fetch('/mobile-page');
+  //         // res.writeHead(302, { Location: '/mobile-page' });
+  //         // res.end();
+  //         console.log('you are on a computer')
+  //       }
+  //     }
+
+  // }, [])
+
 
   // const printArrow = (e) => {
   //   console.log(e.code)
