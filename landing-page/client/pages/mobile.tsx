@@ -36,19 +36,19 @@ const Mobile = () => {
 
 
   return (
-    <div style={{ textAlign: 'center'}}>
+    <div style={{ textAlign: 'center'}} className='mobile'>
         <br></br>
         <br></br>
         <br></br>
         <br></br>
         <br></br>
-        <h1>You need a wider screen to view this app</h1>
+        <h2>You need a wider screen to view this app</h2>
         <br></br>
         <br></br>
         <br></br>
         <br></br>
         <br></br>
-        <h1>Mobile updates on the way!</h1>
+        <h2>Mobile updates on the way!</h2>
         <div>
             <Link href={'/'}>
                 <Image src="/assets/address_book_home.png" alt="home" width={35} height={35} />
