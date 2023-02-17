@@ -40,7 +40,7 @@ const Snake = () => {
 
         setPlaying(true)
         snake()
-        const startButton = document.querySelector('.startButton')
+        const startButton = document.querySelector('.startButton') as HTMLButtonElement;
         startButton.style.display = 'none'
 
     }
