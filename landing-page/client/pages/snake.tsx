@@ -15,6 +15,8 @@ const Snake = () => {
     const [editing, setEditing] = useState(false);
     const [player, setPlayer] = useState('???');
 
+    const [leaderboard, setLeaderBoard] = useState([])
+
     const handleClick = () => {
         setEditing(true);
     };
@@ -45,9 +47,39 @@ const Snake = () => {
 
     }
 
+    const formData = {
+        player,
+        score
+    }
+
 
 
     useEffect(()=>{
+        // if score > 0
+            //then name and score get POSTED
+
+        if (score > 0) {
+            // console.log(formData);
+            // console.log(JSON.stringify(formData))
+
+        fetch('http://127.0.0.1:3000/leaderboards', {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        })
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+
+
+        fetch('http://127.0.0.1:3000/leaderboards')
+        .then((response) => response.json())
+        .then((data) => setLeaderBoard(data))
+
+        }
+
+
         //when score changes to anything greater than 0 we want make a post request
         //in the POST we want to sned the score and the player states to the backend
         //then we want to qulaify the users name is appropriate maybe
@@ -55,11 +87,25 @@ const Snake = () => {
     }, [score])
 
 
+    useEffect(()=>{
+        fetch('https://desolate-refuge-59045.herokuapp.com/leaderboards')
+        .then((response) => response.json())
+        .then((data) => setLeaderBoard(data))
+    }, [])
 
-
-      
-      
-
+    
+    const entries = (leaderboard) => {
+        return leaderboard?.map(entry => (
+            <li key={entry.id} className='list'>
+                <div className='records'>
+                    <h3>{entry.player}</h3>
+                    <h3>{entry.score}</h3>
+                </div>
+                    <hr className='line'></hr>
+            </li>
+            
+        ))
+    }
 
     
   return (
@@ -134,19 +180,16 @@ const Snake = () => {
                     </div>
                     <div className='leader-board'>
                         <h1>LeaderBoard</h1>
-                        <h2>Coming soon...</h2>
-                        {/* <hr className='line'></hr>
-                        <div className='records'>
-                        <h3>name</h3>
                         
-                        <h3>score</h3>
+                        <div className='window-leaderboard'>
+                        <div className="title-bar">
+                            <div className="title-bar-text">Ranking</div>
                         </div>
-                        <hr className='line'></hr>
-                        <div className='records'>
-                        <h3>name</h3>
-                        
-                        <h3>score</h3>
-                    </div> */}
+                            {/* <div className='window-leaderboard'> */}
+                                <ol className='list'>{entries(leaderboard)}</ol>
+                            {/* </div> */}
+                        </div>
+
                     </div>
                     {/* <div className="snake-buttons">
                         <div className='snake-buttons-container'>

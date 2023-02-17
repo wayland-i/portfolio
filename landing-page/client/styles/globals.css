@@ -421,13 +421,45 @@ p {
 .records {
   display: flex;
   justify-content: space-around;
+  /* margin: 0; */
   /* justify-content: space-around; */
   /* width: fit-content; */
   /* text-align: center; */
 }
 
+.records h3 {
+  margin: 1%;
+}
+
 .line {
   /* font-family: 'MyFont', sans-serif; */
-  border-color: black;
-  border: 1.5px solid black;
+  /* border-color: black;
+  border: 1.5px solid black; */
+  /* width: 200%; */
+}
+
+.list {
+  /* list-style-type: decimal; */
+  font-size: 2rem;
+  /* type="1"; */
+}
+
+.list li {
+  /* margin: 0px; */
+}
+
+
+.window-leaderboard {
+  width: fit-content;
+  min-width: 20vw;
+  /* height: 80%; */
+  height: 70vh;
+  scroll-behavior: auto;
+  overflow: auto;
+  background-color: #c3c3c3;
+  margin: auto;
+  /* margin-top: %; */
+  display: flex;
+  flex-direction: column;
+  /* position: absolute; */
 }
