@@ -15,7 +15,7 @@ const Snake = () => {
     const [editing, setEditing] = useState(false);
     const [player, setPlayer] = useState('???');
 
-    const handleDoubleClick = () => {
+    const handleClick = () => {
         setEditing(true);
     };
 
@@ -40,51 +40,23 @@ const Snake = () => {
 
         setPlaying(true)
         snake(setScore)
-        // console.log('game has ended score has set')
-        // console.log(endScore)
-        // setScore(endScore);
-        // setScore(score)
         const startButton = document.querySelector('.startButton') as HTMLButtonElement;
         startButton.style.display = 'none'
 
     }
 
 
-    // if (document.querySelector('.popup').display('none'))
-
-    // if (document.querySelector('.popup')) {
-    //     console.log('game over')
-    // }
 
     useEffect(()=>{
-        if (document.querySelector('.popup')) {
-            console.log('game over')
-        }
-    }, [])
+        //when score changes to anything greater than 0 we want make a post request
+        //in the POST we want to sned the score and the player states to the backend
+        //then we want to qulaify the users name is appropriate maybe
+        //finally we want to re-render the leaderboard
+    }, [score])
 
 
-    function setScoreToState() {
-        let jsScore = document.querySelector(".scoreDisplay")
-        let numScore = jsScore.textContent
-        // setScore(numScore)
-    }
 
-    if (typeof window !== 'undefined') {
-        // window is defined, can use it here
-        // window.alert('Hello, world!');
-        if (window) {
-            // console.log(window)
-            // console.log(window.alert.length)
-        }
-        // console.log('you are cool')
-        // let jsScore = document.querySelector(".scoreDisplay")
-        // let numScore = jsScore.textContent
-        // setScore(numScore)
-      } else {
-        // window is not defined, do something else
-        null
-        // console.log('Hello, world!');
-      }
+
       
       
 
@@ -152,9 +124,10 @@ const Snake = () => {
                             onChange={handleChange}
                             onKeyPress={handleKeyPress}
                             onBlur={handleBlur}
+                            maxLength={3}
                             />
                         ) : (
-                            <h1 onDoubleClick={handleDoubleClick}>{player}</h1>
+                            <h1 onClick={handleClick}>{player}</h1>
                         )}
                     </div>
                     <div className="grid"></div>

@@ -84,7 +84,7 @@ export function snake( setScore ) {
     function moveOutcome (){ 
         let squares = document.querySelectorAll(".grid div") 
         if(checkForHits(squares)){
-            // alert("you hit something") 
+            alert("you hit something") 
             popup.style.display="flex"
             setScore(score)
             return clearInterval(interval)
@@ -139,6 +139,7 @@ export function snake( setScore ) {
     function replay() { 
         grid.innerHTML=""
         score = 0
+        setScore(0)
         createBoard()  
         startGame()  
         popup.style.display = "none"; 
