@@ -21,7 +21,7 @@ const Prices = () => {
 
   useEffect(() => {
 
-    fetch('https://desolate-refuge-59045.herokuapp.com/crypto',
+    fetch('https://vast-inlet-63510.herokuapp.com/crypto',
     {
       headers: new Headers({
         'Content-Type': 'application/json'
