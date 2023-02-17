@@ -216,7 +216,7 @@ const Snake = () => {
                         
                         <div className='window-leaderboard'>
                         <div className="title-bar">
-                            <div className="title-bar-text">Ranking</div>
+                            <div className="title-bar-text">Rankings</div>
                         </div>
                             {/* <div className='window-leaderboard'> */}
                                 <ol className='list'>{entries(leaderboard)}</ol>
