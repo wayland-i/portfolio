@@ -62,7 +62,7 @@ const Snake = () => {
             // console.log(formData);
             // console.log(JSON.stringify(formData))
 
-        fetch('http://127.0.0.1:3000/leaderboards', {
+        fetch('https://desolate-refuge-59045.herokuapp.com/leaderboards', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -73,7 +73,7 @@ const Snake = () => {
         .then((data) => console.log(data))
 
 
-        fetch('http://127.0.0.1:3000/leaderboards')
+        fetch('https://desolate-refuge-59045.herokuapp.com/leaderboards')
         .then((response) => response.json())
         .then((data) => setLeaderBoard(data))
 
