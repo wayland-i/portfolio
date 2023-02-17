@@ -1,13 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import Router from 'next/router';
 import "98.css";
 import Link from 'next/link';
 import Window from '../comps/window';
-import { useEffect } from 'react';
-import { loadGetInitialProps } from 'next/dist/shared/lib/utils';
-// import { getDeviceType } from './utils/deviceType'; // function to detect device type
+
 
 const Home: NextPage = () => {
 
