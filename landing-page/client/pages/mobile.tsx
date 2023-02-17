@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react'
 const Mobile = () => {
 
     useEffect(()=>{
-        fetch('https://vast-inlet-63510.herokuapp.com/leaderboards')
+        fetch('https://gentle-everglades-37915.herokuapp.com/leaderboards')
         .then((response) => response.json())
         .then((data) => setLeaderBoard(data))
     }, [])
