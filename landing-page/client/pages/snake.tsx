@@ -72,7 +72,7 @@ const Snake = () => {
             //https://vast-inlet-63510.herokuapp.com
             //http://127.0.0.1:3000/leaderboards
 
-        fetch('https://gentle-everglades-37915.herokuapp.com/leaderboards', {
+        fetch('https://calm-springs-82363.herokuapp.com/leaderboards', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -117,7 +117,7 @@ const Snake = () => {
 
 
     useEffect(()=>{
-        fetch('https://gentle-everglades-37915.herokuapp.com/leaderboards')
+        fetch('https://calm-springs-82363.herokuapp.com/leaderboards')
         .then((response) => response.json())
         .then((data) => setLeaderBoard(data))
     }, [score])
