@@ -20,12 +20,17 @@ const Snake = () => {
     const [score, setScore] = useState(0);
 
     const [editing, setEditing] = useState(false);
+    const [doneEditing, setDoneEditing] = useState(false);
     const [player, setPlayer] = useState('???');
 
     const [leaderboard, setLeaderBoard] = useState([])
 
     const handleClick = () => {
-        setEditing(true);
+        if (doneEditing === false) {
+            setEditing(true);
+        } else {
+            null
+        }
     };
 
     const handleChange = (event) => {
@@ -35,6 +40,7 @@ const Snake = () => {
     const handleKeyPress = (e) => {
         if (e.key === 'Enter') {
           setEditing(false)
+          setDoneEditing(true)
         }
       };
     
@@ -206,6 +212,7 @@ const Snake = () => {
                             onKeyPress={handleKeyPress}
                             onBlur={handleBlur}
                             maxLength={3}
+                            minLength={3}
                             />
                         ) : (
                             <h1 onClick={handleClick}>{player}</h1>
