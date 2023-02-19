@@ -183,13 +183,13 @@ const Snake = () => {
                         <h3>Instructions</h3>
                         <h4>1. replace ??? with 3 characters, press enter when done</h4> 
                         <h4>2. press -play snake- and use arrow keys to move</h4>
-                        <h4>3. Beat the highscore!</h4>
+                        <h4>3. Beat your previous highscore!</h4>
                         </div>: 
                         <div className='instruction'>
                         <h3>Instructions</h3>
                         <h4>1. replace ??? with 3 characters, press enter when done</h4> 
                         <h4>2. press -play snake- and use arrow keys to move</h4>
-                        <h4>3. Beat the highscore!</h4>
+                        <h4>3. Beat your previous highscore!</h4>
                         <button onClick={playSanke} className="startButton">Play Snake</button>
                         <div className="popup">
                         <button className="playAgain">Play Again?</button>
