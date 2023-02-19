@@ -39,7 +39,13 @@ const Snake = () => {
 
 
     const handleKeyPress = (e) => {
-        if (player.length === 3 && player != '???' && player != '   ') {
+        if (
+            player.length === 3 
+            && player != '???' 
+            && player != ''
+            && player != ' '
+            && player != '  '
+            && player != '   ') {
             if (e.key === 'Enter') {
                 setEditing(false)
                 setDoneEditing(true)
