@@ -8,51 +8,7 @@ import Window from '../comps/window';
 
 const Home: NextPage = () => {
 
-  // useEffect(()=>{
-  //   console.log(window.innerWidth)
-  //   if (window.innerWidth < 800) {
-  //     Router.push('/mobile');
-  //   }
-  // }, [])
-
-  // useEffect(()=>{
-    
-  //     const isMobile = getDeviceType() === 'mobile';
-  //     if (isMobile) {
-  //       // redirect to a different page if user is on mobile
-  //       if (typeof window !== 'undefined') {
-  //         // console.log('you are on m')
-  //         // Router.push('/mobile-page');
-  //       } else {
-  //         // server-side redirection
-  //         // const res = await fetch('/mobile-page');
-  //         // res.writeHead(302, { Location: '/mobile-page' });
-  //         // res.end();
-  //         console.log('you are on a computer')
-  //       }
-  //     }
-
-  // }, [])
-
-
-  // const printArrow = (e) => {
-  //   console.log(e.code)
-  // }
-
-  // useEffect(() => {
-  //   function handleKeyDown(event) {
-  //     if (event.keyCode === 37 || event.keyCode === 38 || event.keyCode === 39 || event.keyCode === 40) {
-  //       printArrow(event);
-  //     }
-  //   }
-
-  //   window.addEventListener('keydown', handleKeyDown);
-
-  //   return () => {
-  //     window.removeEventListener('keydown', handleKeyDown);
-  //   };
-  // }, []);
-
+  
 
   return (
     <div className='home-page'>
