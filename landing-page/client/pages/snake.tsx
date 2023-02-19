@@ -37,10 +37,13 @@ const Snake = () => {
         setPlayer(event.target.value);
     };
 
+
     const handleKeyPress = (e) => {
-        if (e.key === 'Enter') {
-          setEditing(false)
-          setDoneEditing(true)
+        if (player.length === 3 && player != '???' && player != '   ') {
+            if (e.key === 'Enter') {
+                setEditing(false)
+                setDoneEditing(true)
+            }
         }
       };
     
@@ -66,6 +69,19 @@ const Snake = () => {
     }
 
 
+    const fetchLeaderboardData = () => {
+        fetch('https://calm-springs-82363.herokuapp.com/leaderboards')
+          .then(response => response.json())
+          .then(data => {
+            // Update your state with the fetched data
+            setLeaderBoard(data);
+          })
+          .catch(error => {
+            console.error('Error:', error);
+          });
+      };
+
+
 
     useEffect(()=>{
         // if score > 0
@@ -89,6 +105,9 @@ const Snake = () => {
         .then((data) => console.log(data))
 
 
+        fetchLeaderboardData();
+
+
         // fetch('/leaderboards')
         // .then((response) => response.json())
         // .then((data) => setLeaderBoard(data))
@@ -97,17 +116,17 @@ const Snake = () => {
 
         // setLeaderBoard([...leaderboard, formData])
 
-        leaderboard.push(formData)
+        // leaderboard.push(formData)
 
-        const newLeaderboard = leaderboard.concat(leaderboard);
+        // const newLeaderboard = leaderboard.concat(leaderboard);
 
 
 
-        // // Sort the concatenated array based on the "score" property in descending order
-        newLeaderboard.sort((a, b) => b.score - a.score);
+        // // // Sort the concatenated array based on the "score" property in descending order
+        // newLeaderboard.sort((a, b) => b.score - a.score);
 
-        // // Update the state with the sorted array
-        setLeaderBoard(newLeaderboard);
+        // // // Update the state with the sorted array
+        // setLeaderBoard(newLeaderboard);
 
 
         }
