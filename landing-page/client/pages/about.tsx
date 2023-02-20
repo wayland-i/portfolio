@@ -20,8 +20,8 @@ const about = () => {
             <h4>Technologies</h4>
             <p className='tech-list'>React.js, Ruby on Rails, Next.js, Typescript, PostgreSQL, Tailwind, JavaScript, Ruby, CSS</p>
         </div>
-        <div>
-            <Link href={'/'}>
+        <div className='bottom-left'>
+            <Link href={'/'} >
                 <Image src="/assets/address_book_home.png" alt="home" width={35} height={35} />
                 Return Home
             </Link>

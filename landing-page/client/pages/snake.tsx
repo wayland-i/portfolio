@@ -173,6 +173,8 @@ const Snake = () => {
         })
       }
 
+      // script for footer and return home
+
     
   return (
     <>
@@ -278,7 +280,7 @@ const Snake = () => {
                         <button className="playAgain">?</button>
                     </div> */}
 
-                    <div>
+                    <div className='bottom-left'>
                         <Link href={'/'}>
                             <Image src="/assets/address_book_home.png" alt="home" width={35} height={35} />
                             Return Home
