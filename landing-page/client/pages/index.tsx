@@ -26,17 +26,15 @@ const Home: NextPage = () => {
           <Image src="/assets/projects.png" alt="Projects" width={35} height={35} />
           <p>
             Coming Soon
-          {/* DEMO */}
           </p>
         </div>
         <div>
-          {/* <Link href={'/prices'} className='landing-link'> */}
+          <Link href={'/prices'} className='landing-link'>
             <Image src="/assets/pricing.png" alt="Pricing" width={35} height={35} />
             <p>
-              Coming Soon
-            {/* The Prices */}
+              The Prices
             </p>
-          {/* </Link> */}
+          </Link>
         </div>
         <div>
           <Link href={'/contact'} className='landing-link'>
