@@ -237,7 +237,7 @@ const Snake = () => {
                             value={player}
                             onChange={handleChange}
                             onKeyPress={handleKeyPress}
-                            onBlur={handleBlur}
+                            // onBlur={handleBlur}
                             maxLength={3}
                             minLength={3}
                             />
