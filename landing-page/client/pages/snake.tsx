@@ -80,7 +80,8 @@ const Snake = () => {
           .then(response => response.json())
           .then(data => {
             // Update your state with the fetched data
-            setLeaderBoard(data);
+            const cleanedData = data.filter((entry) => entry.score < 200);
+            setLeaderBoard(cleanedData);
           })
           .catch(error => {
             console.error('Error:', error);
