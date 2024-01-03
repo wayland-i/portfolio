@@ -55,15 +55,6 @@ const Home: NextPage = () => {
           </Link>
         </div>
         <div>
-        <Link href={'https://lambent-blancmange-d17a27.netlify.app/'} target="_blank" className='landing-link' id='wcq'>
-            <Image src="/assets/worldwide.png" alt="Contact-Us" width={35} height={35} />
-            <p>
-              My First Web App {' '}
-              (sentimental)
-            </p>
-        </Link>
-        </div>
-        <div>
           <Link href={'/snake'} className='landing-link'>
             <Image 
               // src="/assets/snake.png"
@@ -76,6 +67,18 @@ const Home: NextPage = () => {
               Snake
             </p>
           </Link>
+        </div>
+        <div>
+        {/* <Link href={'https://lambent-blancmange-d17a27.netlify.app/'} target="_blank" className='landing-link' id='wcq'> */}
+            <Image src="/assets/worldwide.png" alt="Contact-Us" width={35} height={35} />
+            <p>
+              Coming Soon
+            </p>
+            {/* <p>
+              My First Web App {' '}
+              (sentimental)
+            </p> */}
+        {/* </Link> */}
         </div>
         <div>
           <Link href={'/about'} className='landing-link'>
