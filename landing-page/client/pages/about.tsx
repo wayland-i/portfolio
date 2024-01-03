@@ -14,11 +14,11 @@ const about = () => {
         <div>
             <h1>Ian Iversen</h1>
             <h2>Full Stack Web Developer</h2>
-            <p className='tech-list' >Ian is a full stack web developer proficient in JavaScript/Ruby languages, libraries and frameworks.</p>
+            <p className='tech-list' >Ian is a full stack web developer proficient in JavaScript/Ruby/Python languages, libraries and frameworks. Ian currently works as a System Engineer for ITCSNY.</p>
         </div>
         <div className='technologies'>
             <h4>Technologies</h4>
-            <p className='tech-list'>React.js, Ruby on Rails, Next.js, Typescript, PostgreSQL, Tailwind, JavaScript, Ruby, CSS</p>
+            <p className='tech-list'>C, React.js, Ruby on Rails, Next.js, Flask, PostgreSQL, TypeScript, Tailwind, JavaScript, Ruby, Git, Postman, HTML, CSS, JSON</p>
         </div>
         <div className='bottom-left'>
             <Link href={'/'} >
