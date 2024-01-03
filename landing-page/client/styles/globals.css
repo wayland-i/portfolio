@@ -123,8 +123,7 @@ p {
   color: #fdffff;
   text-align: center;
   font-family: 'MyFont', sans-serif;
-  
-  
+
 }
 
 .window {
@@ -185,7 +184,8 @@ p {
 }
 
 .tech-list {
-  /* text-align: center; */
+  text-align: center;
+  padding: 4%;
 }
 
 /* .technologies > p {

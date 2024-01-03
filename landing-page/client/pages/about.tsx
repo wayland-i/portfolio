@@ -14,7 +14,7 @@ const about = () => {
         <div>
             <h1>Ian Iversen</h1>
             <h2>Full Stack Web Developer</h2>
-            <p>Ian is a full stack web developer proficient in JavaScript/Ruby languages, libraries and frameworks.</p>
+            <p className='tech-list' >Ian is a full stack web developer proficient in JavaScript/Ruby languages, libraries and frameworks.</p>
         </div>
         <div className='technologies'>
             <h4>Technologies</h4>
