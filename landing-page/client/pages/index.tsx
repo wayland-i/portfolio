@@ -23,13 +23,6 @@ const Home: NextPage = () => {
           <p>Coming Soon</p>
         </div>
         <div>
-          <Image src="/assets/projects.png" alt="Projects" width={35} height={35} />
-          <p>
-            Coming Soon
-          {/* DEMO */}
-          </p>
-        </div>
-        <div>
           {/* <Link href={'/prices'} className='landing-link'> */}
             <Image src="/assets/pricing.png" alt="Pricing" width={35} height={35} />
             <p>
@@ -37,6 +30,14 @@ const Home: NextPage = () => {
             {/* The Prices */}
             </p>
           {/* </Link> */}
+        </div>
+        <div>
+          <Link href={'https://github.com/wayland-i/Eloquent-JavaScript'} target="_blank" className='landing-link' id='wcq' >
+            <Image src="/assets/projects.png" alt="Projects" width={35} height={35} />
+            <p>
+              Eloquent JavaScript
+            </p>
+          </Link>
         </div>
         <div>
           <Link href={'/contact'} className='landing-link'>
