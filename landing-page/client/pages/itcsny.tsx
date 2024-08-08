@@ -12,7 +12,7 @@ export const itcsny = () => {
       <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
     </Head>
     <div>
-        <h1>IT Computer Support of New York</h1>
+        <h2>IT Computer Support of New York</h2>
         <h2>System Engineer | June 2023 - Current </h2>
         <p className='job-description' style={{paddingTop: '2rem'}}>Integrated data networks and digital video surveillance systems in NYC public schools following the DOE’s engineering specifications.</p>
         <p className='job-description'>Configured switch port VLANs, fiber/ethernet connections, and servers using TCP/IP, DNS, and Subnetting.</p>
