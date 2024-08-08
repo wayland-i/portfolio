@@ -11,7 +11,7 @@ export const itcsny = () => {
       <title>{`Ian Iversen's Portfolio`}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
     </Head>
-    <div>
+    <div className='itcsny'>
         <h2>IT Computer Support of New York</h2>
         <h2>System Engineer | June 2023 - Current </h2>
         <p className='job-description' style={{paddingTop: '2rem'}}>Integrated data networks and digital video surveillance systems in NYC public schools following the DOE’s engineering specifications.</p>
