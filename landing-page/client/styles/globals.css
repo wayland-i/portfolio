@@ -23,7 +23,7 @@ body {
 
 .layout {
   background-color: #008080;
-  height: 100vh;
+  min-height: 100vh;
   /* height: -content; */
   display: flex;
   flex-direction: column;

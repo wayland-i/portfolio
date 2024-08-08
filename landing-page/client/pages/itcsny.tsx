@@ -6,7 +6,7 @@ import Head from 'next/head';
 
 export const itcsny = () => {
   return (
-    <div className='about'>
+    <div >
     <Head>
       <title>{`Ian Iversen's Portfolio`}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
