@@ -13,14 +13,17 @@ const media = () => {
         </Head>
         <div>
             <h2>ITCSNY</h2>
-            <Image>
-                
-            </Image>
+            <Image src="/images/IMG_5676.jpeg" alt="Contact-Us" width={300} height={400} style={{padding: '2%'}}></Image>
+            <Image src="/images/IMG_8340.jpeg" alt="Contact-Us" width={300} height={400}></Image>
+            <Image src="/images/IMG_8360.jpeg" alt="Contact-Us" width={300} height={400} style={{padding: '2%'}}></Image>
+            <Image src="/images/1705352395361.jpeg" alt="Contact-Us" width={300} height={400}></Image>
         </div>
-        <div className='technologies'>
+        {/* <div className='technologies'>
             <h4>C Programming</h4>
-            <p className='tech-list'>C, Java, React.js, Ruby on Rails, Next.js, Flask, PostgreSQL, TypeScript, Tailwind, JavaScript, Ruby, Git, Postman, HTML, CSS, JSON</p>
-        </div>
+            <Image src="/images/bulbs.gif" alt="Contact-Us" width={300} height={400} style={{padding: '2%'}}></Image>
+            <Image src="/images/" alt="Contact-Us" width={300} height={400} style={{padding: '2%'}}></Image>
+            <Image src="/images/" alt="Contact-Us" width={300} height={400} style={{padding: '2%'}}></Image>
+        </div> */}
         {/* <div className='bottom-left'>
             <Link href={'/'} >
                 <Image src="/assets/address_book_home.png" alt="home" width={35} height={35} />
