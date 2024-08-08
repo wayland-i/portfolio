@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React, { useState, useEffect } from "react";
+import Link from 'next/link';
 
 
 const Footer = () => {
@@ -16,10 +17,12 @@ const Footer = () => {
 
   return (
     <div className='footer'>
+      <Link href={'/'} className='landing-link'>
       <button className='start-button' >
         <Image src="/assets/windows-logo.png" alt="Windows Logo" width={25} height={25} />
         Start
       </button>
+      </Link>
       <div className='footer-right'>
         <Image src="/assets/utopia_smiley.png" alt="Smiley Face" width={20} height={20}/>
         <div style={{'fontSize': '.85rem'}}>{time}</div>

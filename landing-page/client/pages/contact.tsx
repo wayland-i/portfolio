@@ -14,12 +14,12 @@ const Contact = () => {
         <div className='email'>
           <h2>email: ianiversen1@gmail.com</h2>
         </div>
-        <div className='bottom-left'>
+        {/* <div className='bottom-left'>
             <Link href={'/'} >
                 <Image src="/assets/address_book_home.png" alt="home" width={35} height={35} />
                 Return Home
             </Link>
-        </div>
+        </div> */}
     </div>
   )
 }
