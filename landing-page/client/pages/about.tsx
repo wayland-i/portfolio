@@ -20,12 +20,12 @@ const about = () => {
             <h4>Technologies</h4>
             <p className='tech-list'>C, Java, React.js, Ruby on Rails, Next.js, Flask, PostgreSQL, TypeScript, Tailwind, JavaScript, Ruby, Git, Postman, HTML, CSS, JSON</p>
         </div>
-        <div className='bottom-left'>
+        {/* <div className='bottom-left'>
             <Link href={'/'} >
                 <Image src="/assets/address_book_home.png" alt="home" width={35} height={35} />
                 Return Home
             </Link>
-        </div>
+        </div> */}
     </div>
   )
 }

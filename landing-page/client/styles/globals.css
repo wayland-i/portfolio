@@ -182,9 +182,13 @@ p {
   justify-content: space-between;
 }
 
+.contact {
+  font-family: 'MyFont', sans-serif;
+}
 
 .technologies {
   display: inline;
+  font-family: 'MyFont', sans-serif;
   
   /* align-items: center; */
 
@@ -202,6 +206,7 @@ p {
   text-align: center;
   font-size: 1.6rem;
 }
+
 
 
 /* .technologies > p {

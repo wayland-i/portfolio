@@ -43,13 +43,13 @@ const Mobile = () => {
         <h2>You need a wider screen to view this app</h2>
 
         <h2>Mobile updates on the way!</h2>
-        <div style={{marginTop: '40px'}} className='bottom-left'>
+        {/* <div style={{marginTop: '40px'}} className='bottom-left'>
             <Link href={'/'}>
                 <Image src="/assets/address_book_home.png" alt="home" width={35} height={35} />
                 Return Home
             </Link>
             
-        </div>
+        </div> */}
         <div className='leader-board' style={{margin: '40px', position: 'static'}}>
             <div className='window-leaderboard' style={{height: '500px', width: '300px'}}>
                     <div className="title-bar" >
