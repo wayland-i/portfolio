@@ -70,16 +70,12 @@ const Home: NextPage = () => {
           </Link>
         </div>
         <div>
-        {/* <Link href={'https://lambent-blancmange-d17a27.netlify.app/'} target="_blank" className='landing-link' id='wcq'> */}
-            <Image src="/assets/worldwide.png" alt="Contact-Us" width={35} height={35} />
+          <Link href={'/itcsny'} className='landing-link'>
+            <Image src="/assets/worldwide.png" alt="web" width={35} height={35} />
             <p>
-              Coming Soon
+              ITCSNY
             </p>
-            {/* <p>
-              My First Web App {' '}
-              (sentimental)
-            </p> */}
-        {/* </Link> */}
+            </Link>
         </div>
         <div>
           <Link href={'/about'} className='landing-link'>

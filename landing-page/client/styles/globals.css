@@ -189,6 +189,12 @@ p {
   padding: 4%;
 }
 
+.job-description {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+
 /* .technologies > p {
   margin-left: 10%;
 
