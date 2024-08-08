@@ -22,7 +22,7 @@ const Footer = () => {
       </button>
       <div className='footer-right'>
         <Image src="/assets/utopia_smiley.png" alt="Smiley Face" width={20} height={20}/>
-        {/* <div style={{'fontSize': '.85rem'}}>{time}</div> */}
+        <div style={{'fontSize': '.85rem'}}>{time}</div>
       </div>
 
     </div>

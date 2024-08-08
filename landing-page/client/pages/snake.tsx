@@ -80,6 +80,9 @@ const Snake = () => {
           .then(response => response.json())
           .then(data => {
             // Update your state with the fetched data
+            // console.log(data)
+            // console.log('hello')
+            // const cleanedData = data.filter((entry) => entry.score < 200);
             setLeaderBoard(data);
           })
           .catch(error => {
@@ -90,15 +93,12 @@ const Snake = () => {
 
 
     useEffect(()=>{
-        // if score > 0
+            // if score > 0
             //then name and score get POSTED
 
         if (score > 0) {
             // console.log(formData);
             // console.log(JSON.stringify(formData))
-
-            //https://vast-inlet-63510.herokuapp.com
-            //http://127.0.0.1:3000/leaderboards
 
         fetch('https://calm-springs-82363.herokuapp.com/leaderboards', {
             method: "POST",
@@ -113,30 +113,14 @@ const Snake = () => {
 
         fetchLeaderboardData();
 
-
-        // fetch('/leaderboards')
-        // .then((response) => response.json())
-        // .then((data) => setLeaderBoard(data))
-
-        
-
-        // setLeaderBoard([...leaderboard, formData])
-
-        // leaderboard.push(formData)
-
-        // const newLeaderboard = leaderboard.concat(leaderboard);
-
-
-
-        // // // Sort the concatenated array based on the "score" property in descending order
+        // Sort the concatenated array based on the "score" property in descending order
         // newLeaderboard.sort((a, b) => b.score - a.score);
 
-        // // // Update the state with the sorted array
+        // Update the state with the sorted array
         // setLeaderBoard(newLeaderboard);
 
 
         }
-
 
         //when score changes to anything greater than 0 we want make a post request
         //in the POST we want to sned the score and the player states to the backend
@@ -173,12 +157,13 @@ const Snake = () => {
         })
       }
 
+      // script for footer and return home
+
     
   return (
     <>
         <div className='snake-div'>
 
-        
             <Head>
             <title>{`Ian Iversen's Portfolio`}</title>
             <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
@@ -187,14 +172,14 @@ const Snake = () => {
             <div className='snake-header'>
                     { player === "???" || editing ? <div className='instruction'>
                         <h3>Instructions</h3>
-                        <h4>1. replace ??? with 3 characters, press enter when done</h4> 
-                        <h4>2. press -play snake- and use arrow keys to move</h4>
+                        <h4>1. Replace ??? with 3 characters, press enter when done.</h4> 
+                        <h4>2. Press -play snake- and use arrow keys to move.</h4>
                         <h4>3. Beat your previous highscore!</h4>
                         </div>: 
                         <div className='instruction'>
                         <h3>Instructions</h3>
-                        <h4>1. replace ??? with 3 characters, press enter when done</h4> 
-                        <h4>2. press -play snake- and use arrow keys to move</h4>
+                        <h4>1. Replace ??? with 3 characters, press enter when done.</h4> 
+                        <h4>2. Press -play snake- and use arrow keys to move.</h4>
                         <h4>3. Beat your previous highscore!</h4>
                         <button onClick={playSanke} className="startButton">Play Snake</button>
                         <div className="popup">
@@ -204,11 +189,8 @@ const Snake = () => {
                         
                     }
                     
-
-
             </div>
                 
-                    {/* <div className="scoreDisplay"></div> */}
                     <div className='window-snake'>
                             <div className="title-bar" id='snake-title-bar'>
                             <div className="title-bar-text">Snake</div>
@@ -219,14 +201,7 @@ const Snake = () => {
                             </div>
                             </div>
                     <div className='score-board'>
-                    {/* <div className="scoreDisplay">{score}</div> */}
                         <h1 className='scoreDisplay'>{score}</h1>
-                        
-                        {/* <div className="popup">
-                            <button className="playAgain">
-                                <Image src="/assets/recycle_bin_empty_cool-5.png" alt="Smiley Face" width={40} height={40}/>
-                            </button>
-                        </div> */}
 
                         {editing ? (
                             <input
@@ -235,7 +210,6 @@ const Snake = () => {
                             value={player}
                             onChange={handleChange}
                             onKeyPress={handleKeyPress}
-                            onBlur={handleBlur}
                             maxLength={3}
                             minLength={3}
                             />
@@ -246,39 +220,18 @@ const Snake = () => {
                     <div className="grid"></div>
                     </div>
                     <div className='leader-board'>
-                        <h1>LeaderBoard</h1>
+                        <h3>Leaderboard</h3>
                         
                         <div className='window-leaderboard'>
                         <div className="title-bar">
                             <div className="title-bar-text">Rankings</div>
                         </div>
-                            {/* <div className='window-leaderboard'> */}
                                 <ol className='list'>{entries(leaderboard)}</ol>
-                            {/* </div> */}
                         </div>
 
                     </div>
-                    {/* <div className="snake-buttons">
-                        <div className='snake-buttons-container'>
-                            <div className='buttons-left'>
-                                <button className="left">left</button>
-                            </div>
-                            <div className='buttons-center'>
-                                <button className="top">top</button>
-                                <button className="bottom">bottom</button>
-                            </div>
-                            <div className='buttons-right'>
-                                <button className="right">right</button>
-                            </div>
-                        </div>
-                    </div> */}
 
-                    {/* OG POP UP */}
-                    {/* <div className="popup">
-                        <button className="playAgain">?</button>
-                    </div> */}
-
-                    <div>
+                    <div className='bottom-left'>
                         <Link href={'/'}>
                             <Image src="/assets/address_book_home.png" alt="home" width={35} height={35} />
                             Return Home

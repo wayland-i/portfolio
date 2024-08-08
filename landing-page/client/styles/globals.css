@@ -38,6 +38,7 @@ body {
   border-top: 2px solid white;
   display: flex;
   justify-content: space-between;
+  height: 32px;
 }
 
 .footer-right {
@@ -53,6 +54,13 @@ body {
     padding-right: 10px;
     justify-content: space-between;
     width: 87px;
+}
+
+.bottom-left {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 40px;
 }
 
 /* .footer-bar {
@@ -115,8 +123,7 @@ p {
   color: #fdffff;
   text-align: center;
   font-family: 'MyFont', sans-serif;
-  
-  
+
 }
 
 .window {
@@ -177,7 +184,9 @@ p {
 }
 
 .tech-list {
-  /* text-align: center; */
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 4%;
 }
 
 /* .technologies > p {
@@ -200,6 +209,7 @@ p {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
+  overflow-y: hidden;
 }
 
 
@@ -224,6 +234,10 @@ p {
 .instruction {
   position: absolute;
   font-family: 'MyFont', sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 20%;
 }
 
 .instruction h4 {
@@ -248,6 +262,7 @@ p {
   justify-content: space-around;
   align-items: center;
 }
+
 .score-board h1 {
   font-family: 'MyFont', sans-serif;
   font-size: 5rem;
@@ -311,8 +326,8 @@ p {
 }
 .popup {
   /* background-color: rgb(32, 31, 31); */
-  width: 300px;
-  height: 50px;
+  /* width: 300px; */
+  /* height: 50px; */
   margin: 2%;
   /* position: absolute; */
   /* top: 100px; */
@@ -325,9 +340,10 @@ p {
 
 .playAgain {
   font-size: 3rem;
-  width: fit-content;
+  /* width: fit-content; */
   margin: 2%;
   display: block;
+  
   /* position: absolute; */
   /* width: 1000px; */
 }
@@ -416,7 +432,19 @@ p {
   right: 0;
   top: 0;
   margin-right: 2%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  align-items: center;
+
+  
 }
+
+.leader-board h3 {
+  margin-top: 40px;
+}
+
+
 
 .records {
   display: flex;
@@ -440,7 +468,8 @@ p {
 
 .list {
   /* list-style-type: decimal; */
-  font-size: 2rem;
+  font-size: 1.5rem;
+  
   /* type="1"; */
 }
 
@@ -458,7 +487,6 @@ p {
   overflow: auto;
   background-color: #c3c3c3;
   margin: auto;
-  /* margin-top: %; */
   display: flex;
   flex-direction: column;
   /* position: absolute; */

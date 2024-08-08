@@ -70,14 +70,9 @@ export function snake( setScore ) {
             appleIndex = Math.floor(Math.random() * squares.length) 
         } while(squares[appleIndex].classList.contains("snake")) 
         squares[appleIndex].classList.add('apple')
-        // console.log(document.getElementsByClassName('apple')[0])
+        
         let appleSquare = document.getElementsByClassName('apple')[0]
         appleSquare.append(flag);
-        // console.log(appleSquare.append(flag));
-        //  if (appleSquare.nodeType)
-        //     appleSquare.appendChild('img')
-        // innerHTML(<img src='./client/public/assets.flag.png'></img>)
-        // .classList.add("apple") 
     } 
     
     
