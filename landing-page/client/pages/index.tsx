@@ -19,8 +19,10 @@ const Home: NextPage = () => {
 
       <div className='landing-page'>
         <div>
-          <Image src="/assets/style-palet.png" alt="Paint Bucket" width={35} height={35} />
-          <p>Coming Soon</p>
+          <Link href={'/media'} className='landing-link'>
+            <Image src="/assets/style-palet.png" alt="Paint Bucket" width={35} height={35} />
+            <p>Media</p>
+          </Link>
         </div>
         <div>
           <Image src="/assets/projects.png" alt="Projects" width={35} height={35} />
