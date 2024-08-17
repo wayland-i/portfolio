@@ -21,7 +21,7 @@ export const itcsny = () => {
     </div>
     <div className='technologies'>
         <h3>Technologies</h3>
-        <p className='job-description'>TCP/IP, DNS, Subnetting, VLANs, Cisco Commandline, Windows OS, Fiber, Ethernet, Network Diagrams, As-Builts, AutoCAD</p>
+        <p className='job-description'>TCP/IP, DNS, Subnetting, VLANs, Cisco CLI, Windows OS, Fiber, Ethernet, Network Diagrams, As-Builts, AutoCAD</p>
         <h3>Equipment</h3>
         <p className='job-description'>Cisco Meraki MS390/9300/2960 switches, Lenovo SR650 servers, Cisco 9500 Fiber Switches, and Cisco 8300 Routers, APC SMT3000 uninterruptible power supplies.</p>
     </div>
