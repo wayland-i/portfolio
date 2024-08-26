@@ -183,6 +183,11 @@ p {
   justify-content: space-between;
 }
 
+.itcsnyPictures {
+  margin: 2%;
+  font-family: 'MyFont', sans-serif;
+}
+
 .contact {
   font-family: 'MyFont', sans-serif;
 }
