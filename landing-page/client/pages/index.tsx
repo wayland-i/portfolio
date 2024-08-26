@@ -33,7 +33,7 @@ const Home: NextPage = () => {
         </div>
         <div>
           <Link href={'https://github.com/wayland-i/Eloquent-JavaScript'} target="_blank" className='landing-link' id='wcq' >
-            <Image src="/assets/projects.png" alt="Projects" width={35} height={35} />
+            <Image src="/assets/help_book_cool-0.png" alt="Projects" width={35} height={35} />
             <p>
               Eloquent JavaScript
             </p>
@@ -71,7 +71,7 @@ const Home: NextPage = () => {
         </div>
         <div>
           <Link href={'/itcsny'} className='landing-link'>
-            <Image src="/assets/worldwide.png" alt="web" width={35} height={35} />
+            <Image src="/assets/network_internet_pcs_installer-2.png" alt="web" width={35} height={35} />
             <p>
               ITCSNY
             </p>

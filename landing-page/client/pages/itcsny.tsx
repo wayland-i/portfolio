@@ -25,6 +25,15 @@ export const itcsny = () => {
         <h3>Equipment</h3>
         <p className='job-description'>Cisco Meraki MS390/9300/2960 switches, Lenovo SR650 servers, Cisco 9500 Fiber Switches, and Cisco 8300 Routers, APC SMT3000 uninterruptible power supplies.</p>
     </div>
+    <div>
+          <Link href={'/pictures'} className='landing-link'>
+            <Image src="/assets/camera3_network-3.png" alt="About" width={35} height={35} />
+            <p>
+            Pictures
+            </p>
+          </Link>
+      </div>
+
     {/* <div className='bottom-left'>
         <Link href={'/'} >
             <Image src="/assets/address_book_home.png" alt="home" width={35} height={35} />
